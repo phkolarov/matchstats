@@ -59,11 +59,11 @@ SET id = NULL;
 
         $data = DB::table('data');
 
-        if($request->query('country')){
-            $data->where('country',$request->query('country'));
+        if ($request->query('country')) {
+            $data->where('country', $request->query('country'));
         }
-        if($request->query('division')){
-            $data->where('division',$request->query('division'));
+        if ($request->query('division')) {
+            $data->where('division', $request->query('division'));
         }
         $result = $data->skip(($page - 1) * $limit)->limit($limit)->orderBy('id', 'desc')->get();
 
@@ -113,18 +113,18 @@ SET id = NULL;
 
                 if ($parameter == "") {
                     $parameter = 0;
-                }elseif(strtolower($parameter) == "null"){
+                } elseif (strtolower($parameter) == "null") {
                     $parameter = 0;
                 }
 
-                if($key == 'date'){
-                    if(date('Y-m-d',strtotime($parameter))!= $parameter){
+                if ($key == 'date') {
+                    if (date('Y-m-d', strtotime($parameter)) != $parameter) {
                         return response()->json(['message' => 'Invalid data format'], 500);
                     }
                 }
 
-                if($key == 'time'){
-                    if(date('H:i:s',strtotime($parameter))!= $parameter){
+                if ($key == 'time') {
+                    if (date('H:i:s', strtotime($parameter)) != $parameter) {
                         return response()->json(['message' => 'Invalid time format'], 500);
                     }
                 }
@@ -138,16 +138,17 @@ SET id = NULL;
 
         if ($insertion_status) {
             return response()->json(['message' => 'Successfully updated']);
-        }elseif ($insertion_status == 0){
+        } elseif ($insertion_status == 0) {
             return response()->json(['message' => 'Nothing to update'], 500);
         } else {
             return response()->json(['message' => 'Unsuccessfully updated'], 500);
         }
     }
 
-    function delete_row(Request $reques, int $id){
+    function delete_row(Request $reques, int $id)
+    {
 
-       $result =  DB::table('data')->delete($id);
+        $result = DB::table('data')->delete($id);
 
         if ($result) {
             return response()->json(['message' => 'Successfully deleted']);
@@ -205,15 +206,21 @@ SET id = NULL;
         }
     }
 
+    public function get_column_names(Request $request)
+    {
+        $columns = collect(DB::select('DESCRIBE data;'))->pluck('Field')->toArray();
+        return response()->json(['success' => $columns]);
+    }
+
     public function get_page_count(Request $request, $page_count = 1)
     {
         $row_count = DB::table('data');
 
-        if($request->query('country')){
-            $row_count->where('country',$request->query('country'));
+        if ($request->query('country')) {
+            $row_count->where('country', $request->query('country'));
         }
-        if($request->query('division')){
-            $row_count->where('division',$request->query('division'));
+        if ($request->query('division')) {
+            $row_count->where('division', $request->query('division'));
         }
 
         $result = $row_count->count('id');
