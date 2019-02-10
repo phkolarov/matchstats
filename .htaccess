@@ -4,7 +4,7 @@
     </IfModule>
 
     RewriteEngine On
-    RewriteBase /matchstats
+    RewriteBase /matchstats/
    # change above to your site i.e.,  RewriteBase /whatever/public/
 
     # Redirect Trailing Slashes...

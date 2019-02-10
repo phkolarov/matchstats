@@ -15,3 +15,11 @@ storage/*.key
 Homestead.yaml
 Homestead.json
 /.vagrant
+.htaccess
+.idea/vcs.xml
+.idea/workspace.xml
+*.xml
+.rnd
+composer.lock
+composer.lock
+testt.csv
