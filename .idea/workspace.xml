@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/matchstats_page_files/matchstats_common_data_page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="199" column="27" lean-forward="true" selection-start-line="199" selection-start-column="27" selection-end-line="199" selection-end-column="27" />
+            <state relative-caret-position="309">
+              <caret line="194" column="89" lean-forward="true" selection-start-line="194" selection-start-column="89" selection-end-line="194" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -86,6 +86,9 @@
       <find>prevent</find>
       <find>get-data</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -203,11 +206,11 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="173" />
-    <option name="y" value="22" />
+    <option name="x" value="-7" />
     <option name="width" value="1924" />
-    <option name="height" value="1056" />
+    <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -285,6 +288,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
@@ -332,12 +336,12 @@
       <option name="presentableId" value="Default" />
       <updated>1548325944029</updated>
       <workItem from="1548325945376" duration="6674000" />
-      <workItem from="1548400933915" duration="24637000" />
+      <workItem from="1548400933915" duration="26858000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31311000" />
+    <option name="totallyTimeSpent" value="33532000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="7" />
@@ -481,8 +485,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/matchstats_page_files/matchstats_common_data_page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="199" column="27" lean-forward="true" selection-start-line="199" selection-start-column="27" selection-end-line="199" selection-end-column="27" />
+        <state relative-caret-position="309">
+          <caret line="194" column="89" lean-forward="true" selection-start-line="194" selection-start-column="89" selection-end-line="194" selection-end-column="89" />
         </state>
       </provider>
     </entry>
