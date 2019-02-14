@@ -7,3 +7,25 @@ body{
 th{
     font-size: 10px;
 }
+
+table{
+    font-size: 12px;
+    text-align: center;
+
+}
+thead>tr>th{
+    padding-right: 15px !important;
+    font-weight: bold;
+}
+
+.btn-group-xs > .btn, .btn-xs {
+    padding  : .40rem .6rem;
+    font-size  : .875rem;
+    line-height  : .5;
+    border-radius : .2rem;
+}
+
+.card-header{
+    overflow: auto;
+    max-height: 1000px;
+}

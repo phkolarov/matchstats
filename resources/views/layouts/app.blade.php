@@ -12,12 +12,12 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="{{ asset('public/css/common.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/datatables.min.css"/>
     <link href="{{ asset('public/css/all.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('public/libs/simple_pagination/simplePagination.css') }}" >
     <link rel="stylesheet" href="{{ asset('public/libs/date-time-picker/jquery.datetimepicker.css') }}" >
-
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link href="{{ asset('public/css/common.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -25,7 +25,7 @@
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.18/datatables.min.js"></script>
     <script src="{{ asset('public/libs/simple_pagination/jquery.simplePagination.js')}}" defer></script>
     <script src="{{ asset('public/libs/date-time-picker/jquery.datetimepicker.full.min.js')}}" defer></script>
-
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="{{asset('public/js/all.js')}}"></script>
     <script src="{{ asset('public/js/match_stats_app.js') }}" defer></script>
     <script src="{{ asset('public/js/data_service.js') }}" defer></script>

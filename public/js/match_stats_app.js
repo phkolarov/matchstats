@@ -3,7 +3,7 @@ var match_app = match_app || {};
 
 match_app = function () {
 
-    let base_url = 'http://localhost:8080/matchstats/public/api/';
+    let base_url = 'http://localhost/matchstats/public/api/';
 
     function message(message,type) {
 
