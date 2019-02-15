@@ -29,3 +29,18 @@ thead>tr>th{
     overflow: auto;
     max-height: 1000px;
 }
+
+.add-row-buttons
+{
+    font-size: 10px;
+    font-weight: bold;
+    display: inline-block;
+    padding: .33rem;
+}
+.add-row-buttons:nth-child(1){
+    margin-bottom: 5px;
+}
+
+.add-row-buttons:nth-child(2){
+    margin-top: 5px;
+}
