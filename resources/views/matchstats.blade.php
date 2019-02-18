@@ -28,21 +28,21 @@
                                 <th column_type="id" scope="col">ID</th>
                                 <th column_type="date" scope="col">DATE</th>
                                 <th column_type="time" scope="col">TIME</th>
-                                <th column_type="country" scope="col">HOME TEAM</th>
-                                <th column_type="division" scope="col">AWAY TEAM</th>
-                                <th column_type="stage" scope="col">CNTRY</th>
-                                <th column_type="play_offs" scope="col">DVSN</th>
-                                <th column_type="eliminations" scope="col">STAGE</th>
-                                <th column_type="season" scope="col">PLOF</th>
-                                <th column_type="home_team_percent_over_2_5_goals" scope="col">ELIMI</th>
-                                <th column_type="home_team_percent_home_success_rate" scope="col">SEASO</th>
-                                <th column_type="home_team_percent_total_success_rate" scope="col">HTPO2,5</th>
-                                <th column_type="home_team" scope="col">HTPHSR</th>
-                                <th column_type="half_time_result_h" scope="col">HTPTSR</th>
-                                <th column_type="half_time_result_t" scope="col">HTRH</th>
-                                <th column_type="full_time_result_f" scope="col">HTRT</th>
-                                <th column_type="full_time_result_t" scope="col">FTRF</th>
-                                <th column_type="away_team" scope="col">FTRT</th>
+                                <th column_type="home_team" scope="col">HOME TEAM</th>
+                                <th column_type="away_team" scope="col">AWAY TEAM</th>
+                                <th column_type="country" scope="col">CNTRY</th>
+                                <th column_type="division" scope="col">DVSN</th>
+                                <th column_type="stage" scope="col">STAGE</th>
+                                <th column_type="play_offs" scope="col">PLOF</th>
+                                <th column_type="eliminations" scope="col">ELIMI</th>
+                                <th column_type="season" scope="col">SEASO</th>
+                                <th column_type="home_team_percent_over_2_5_goals" scope="col">HTPO2,5</th>
+                                <th column_type="home_team_percent_home_success_rate" scope="col">HTPHSR</th>
+                                <th column_type="home_team_percent_total_success_rate" scope="col">HTPTSR</th>
+                                <th column_type="half_time_result_h" scope="col">HTRH</th>
+                                <th column_type="half_time_result_t" scope="col">HTRT</th>
+                                <th column_type="full_time_result_f" scope="col">FTRF</th>
+                                <th column_type="full_time_result_t" scope="col">FTRT</th>
                                 <th column_type="away_team_percent_total_success_rate" scope="col">ATPTSR</th>
                                 <th column_type="away_team_percent_away_success_rate" scope="col">ATPASR</th>
                                 <th column_type="away_team_percent_over_2_5_goals" scope="col">ATPO2,5</th>
@@ -66,47 +66,47 @@
                                 <th column_type="total_goals_over_1_5" scope="col">TGO 1,5</th>
                                 <th column_type="total_goals_over_2_5" scope="col">TGO 2,5</th>
                                 <th column_type="total_goals_over_3_5" scope="col">TGO 3,5</th>
-                                {{--                                    <th class="w-20">id</th>--}}
-                                {{--                                    <th class="w-20">date</th>--}}
-                                {{--                                    <th class="w-15">time</th>--}}
-                                {{--                                    <th class="w-20">country</th>--}}
-                                {{--                                    <th class="w-5">division</th>--}}
-                                {{--                                    <th class="w-5">stage</th>--}}
-                                {{--                                    <th class="w-5">play_offs</th>--}}
-                                {{--                                    <th class="w-5">eliminations</th>--}}
-                                {{--                                    <th class="w-5">season</th>--}}
-                                {{--                                    <th class="w-5">home_team_percent_over_2_5_goals</th>--}}
-                                {{--                                    <th class="w-5">home_team_percent_home_success_rate</th>--}}
-                                {{--                                    <th class="w-5">home_team_percent_total_success_rate</th>--}}
-                                {{--                                    <th class="w-20">home_team</th>--}}
-                                {{--                                    <th class="w-5">half_time_result_h</th>--}}
-                                {{--                                    <th class="w-5">half_time_result_t</th>--}}
-                                {{--                                    <th class="w-5">full_time_result_f</th>--}}
-                                {{--                                    <th class="w-5">full_time_result_t</th>--}}
-                                {{--                                    <th class="w-20">away_team</th>--}}
-                                {{--                                    <th class="w-5">away_team_percent_total_success_rate</th>--}}
-                                {{--                                    <th class="w-5">away_team_percent_away_success_rate</th>--}}
-                                {{--                                    <th class="w-5">away_team_percent_over_2_5_goals</th>--}}
-                                {{--                                    <th class="w-5">neutral_stadium</th>--}}
-                                {{--                                    <th class="w-5">home_team_to_win</th>--}}
-                                {{--                                    <th class="w-5">draw</th>--}}
-                                {{--                                    <th class="w-5">away_team_to_win</th>--}}
-                                {{--                                    <th class="w-5">home_team_win_or_draw</th>--}}
-                                {{--                                    <th class="w-5">away_team_win_or_draw</th>--}}
-                                {{--                                    <th class="w-5">home_team_or_away_team_win</th>--}}
-                                {{--                                    <th class="w-5">home_team_draw_no_bet</th>--}}
-                                {{--                                    <th class="w-5">away_team_draw_no_bet</th>--}}
-                                {{--                                    <th class="w-5">home_team_over_0_5_goals</th>--}}
-                                {{--                                    <th class="w-5">home_team_over_1_5_goals</th>--}}
-                                {{--                                    <th class="w-5">home_team_over_2_5_goals</th>--}}
-                                {{--                                    <th class="w-5">away_team_over_0_5_goals</th>--}}
-                                {{--                                    <th class="w-5">away_team_over_1_5_goals</th>--}}
-                                {{--                                    <th class="w-5">away_team_over_2_5_goals</th>--}}
-                                {{--                                    <th class="w-5">both_teams_to_score</th>--}}
-                                {{--                                    <th class="w-5">total_goals_over_0_5</th>--}}
-                                {{--                                    <th class="w-5">total_goals_over_1_5</th>--}}
-                                {{--                                    <th class="w-5">total_goals_over_2_5</th>--}}
-                                {{--                                    <th class="w-5">total_goals_over_3_5</th>--}}
+{{--                                                                    <th class="w-20">id</th>--}}
+{{--                                                                    <th class="w-20">date</th>--}}
+{{--                                                                    <th class="w-15">time</th>--}}
+{{--                                                                    <th class="w-20">country</th>--}}
+{{--                                                                    <th class="w-5">division</th>--}}
+{{--                                                                    <th class="w-5">stage</th>--}}
+{{--                                                                    <th class="w-5">play_offs</th>--}}
+{{--                                                                    <th class="w-5">eliminations</th>--}}
+{{--                                                                    <th class="w-5">season</th>--}}
+{{--                                                                    <th class="w-5">home_team_percent_over_2_5_goals</th>--}}
+{{--                                                                    <th class="w-5">home_team_percent_home_success_rate</th>--}}
+{{--                                                                    <th class="w-5">home_team_percent_total_success_rate</th>--}}
+{{--                                                                    <th class="w-20">home_team</th>--}}
+{{--                                                                    <th class="w-5">half_time_result_h</th>--}}
+{{--                                                                    <th class="w-5">half_time_result_t</th>--}}
+{{--                                                                    <th class="w-5">full_time_result_f</th>--}}
+{{--                                                                    <th class="w-5">full_time_result_t</th>--}}
+{{--                                                                    <th class="w-20">away_team</th>--}}
+{{--                                                                    <th class="w-5">away_team_percent_total_success_rate</th>--}}
+{{--                                                                    <th class="w-5">away_team_percent_away_success_rate</th>--}}
+{{--                                                                    <th class="w-5">away_team_percent_over_2_5_goals</th>--}}
+{{--                                                                    <th class="w-5">neutral_stadium</th>--}}
+{{--                                                                    <th class="w-5">home_team_to_win</th>--}}
+{{--                                                                    <th class="w-5">draw</th>--}}
+{{--                                                                    <th class="w-5">away_team_to_win</th>--}}
+{{--                                                                    <th class="w-5">home_team_win_or_draw</th>--}}
+{{--                                                                    <th class="w-5">away_team_win_or_draw</th>--}}
+{{--                                                                    <th class="w-5">home_team_or_away_team_win</th>--}}
+{{--                                                                    <th class="w-5">home_team_draw_no_bet</th>--}}
+{{--                                                                    <th class="w-5">away_team_draw_no_bet</th>--}}
+{{--                                                                    <th class="w-5">home_team_over_0_5_goals</th>--}}
+{{--                                                                    <th class="w-5">home_team_over_1_5_goals</th>--}}
+{{--                                                                    <th class="w-5">home_team_over_2_5_goals</th>--}}
+{{--                                                                    <th class="w-5">away_team_over_0_5_goals</th>--}}
+{{--                                                                    <th class="w-5">away_team_over_1_5_goals</th>--}}
+{{--                                                                    <th class="w-5">away_team_over_2_5_goals</th>--}}
+{{--                                                                    <th class="w-5">both_teams_to_score</th>--}}
+{{--                                                                    <th class="w-5">total_goals_over_0_5</th>--}}
+{{--                                                                    <th class="w-5">total_goals_over_1_5</th>--}}
+{{--                                                                    <th class="w-5">total_goals_over_2_5</th>--}}
+{{--                                                                    <th class="w-5">total_goals_over_3_5</th>--}}
                             </tr>
                             </thead>
                             <tbody>

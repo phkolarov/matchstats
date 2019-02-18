@@ -26,8 +26,9 @@ Route::group(['middleware'=> ['auth:api','throttle:60,1'],'prefix'=> 'system' ],
     Route::post('/add-data','SystemController@upload_file');
     Route::get('/get-data/{skip}/{limit}','SystemController@get_data');
     Route::post('/set-data/','SystemController@set_data');
-    Route::post('/update-data/{id}','SystemController@update_data');
+    Route::put('/update-data/{id}','SystemController@update_data');
     Route::delete('/delete-row/{id}','SystemController@delete_row');
+    Route::delete('/delete-rows','SystemController@delete_rows');
     Route::get('/get-data-count/{count?}','SystemController@get_page_count');
     Route::get('/get-columns','SystemController@get_column_names');
 

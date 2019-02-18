@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use function foo\func;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -90,6 +91,11 @@ SET id = NULL;
 
         }
 
+//        echo '<pre>';
+//         var_dump($insertion_parameters);
+//        echo '</pre>';
+//        die();
+
         $insertion_status = $insertion_state->insert($insertion_parameters);
 
         if ($insertion_status) {
@@ -102,14 +108,18 @@ SET id = NULL;
     public function update_data(Request $request, int $id)
     {
         $parameters = $request->json()->all();
-        $columns = collect(DB::select("SHOW COLUMNS FROM data"))->pluck('Field')->toArray();
-        array_shift($columns);
+        $db_column_data = DB::select("SHOW COLUMNS FROM data");
+        $columns_data = [];
+        $columns = collect($db_column_data)->map(function ($i,$e) use (&$columns_data){
+            $columns_data[$i->Field] = $i->Type;
+        });
+//        array_shift($columns);
 
         $insertion_state = DB::table('data');
         $insertion_parameters = [];
 
         foreach ($parameters as $key => $parameter) {
-            if (in_array($key, $columns)) {
+            if (in_array($key, array_keys($columns_data))) {
 
                 if ($parameter == "") {
                     $parameter = 0;
@@ -117,7 +127,14 @@ SET id = NULL;
                     $parameter = 0;
                 }
 
+                $type  = $columns_data[$key];
+
+                if($type == 'float' && !is_numeric($parameter)){
+                    return response()->json(['message' => 'Invalid data format for column '.$key], 500);
+                }
+
                 if ($key == 'date') {
+
                     if (date('Y-m-d', strtotime($parameter)) != $parameter) {
                         return response()->json(['message' => 'Invalid data format'], 500);
                     }
@@ -131,7 +148,6 @@ SET id = NULL;
 
                 $insertion_parameters[$key] = $parameter;
             }
-
         }
 
         $insertion_status = $insertion_state->where('id', $id)->update($insertion_parameters);
@@ -154,6 +170,18 @@ SET id = NULL;
             return response()->json(['message' => 'Successfully deleted']);
         } else {
             return response()->json(['message' => 'Unsuccessfully deleted'], 500);
+        }
+    }
+
+
+    function delete_rows(Request $request)
+    {
+        $deletion_row_ids = $request->get('ids');
+        $result = DB::table('data')->whereIn('id',$deletion_row_ids)->delete();
+        if ($result) {
+            return response()->json(['message' => 'Successfully deleted rows']);
+        } else {
+            return response()->json(['message' => 'Unsuccessfully deleted rows'], 500);
         }
     }
 

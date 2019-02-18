@@ -19,11 +19,10 @@ $(document).ready(function () {
                 columns.push({
                     'data': columns_array[column],
                     'visible': visible,
-                    'className': column_name
-                    // "createdCell": function (td, cellData, rowData, row, col) {
-                    //
-                    //     $(td).attr('type',column_name);
-                    // }
+                    'className': column_name,
+                    "createdCell": function (td, cellData, rowData, row, col) {
+                        $(td).attr('type', column_name);
+                    }
                 })
             }
 
@@ -74,8 +73,6 @@ $(document).ready(function () {
             $('#data tfoot th').each(function (i, el) {
                 var title = $(this).text();
                 let width = 33;
-
-                console.log(title);
                 if (i == 0) {
                     width = 61;
                 }
@@ -102,18 +99,39 @@ $(document).ready(function () {
                 if (column_name == 'id') {
                     add_button_string = add_row_button;
                     cancel_button_string = cancel_row_button;
-                }
-
-                row_string += `
-                    <td>${add_button_string}<input time="${date.getTime()}" style="width: 60px" type="text" placeholder="${column_name}">${cancel_button_string}</td>
+                    row_string += `
+                    <td>${add_button_string}${cancel_button_string}</td>
                 `;
+                } else {
+
+                    let picker_type = '';
+                    if (column_name == 'date') {
+                        picker_type = 'picker-type="date"';
+                    } else if (column_name == 'time') {
+                        picker_type = 'picker-type="time"';
+                    }
+                    row_string += `
+                    <td>${add_button_string}<input  ${picker_type} time="${date.getTime()}" style="width: 60px" type="text" placeholder="${column_name}">${cancel_button_string}</td>
+                `;
+                }
             });
+
             row_string += '</tr>';
 
             $('#data tbody').prepend(
                 row_string
             );
-        })
+
+            $('[picker-type="date"]').datetimepicker({
+                timepicker: false,
+                format: 'Y-m-d H:i'
+            });
+
+            $('[picker-type="time"]').datetimepicker({
+                datepicker: false,
+                format: 'H:i'
+            });
+        });
 
         $(document).on('click', '.add-row-button', function () {
             let time = $(this).attr('insertion-button-id');
@@ -121,22 +139,24 @@ $(document).ready(function () {
             let data = {};
             inputs.each(function () {
                 let name = $(this).attr('placeholder');
-                let value = $(this).val();
-                data[name] = value;
+                data[name] = $(this).val();
             });
 
-            if(!data.home_team || !data.away_team ){
-                match_app.message('Please enter team names','error');
+            if (!data.home_team || !data.away_team) {
+                match_app.message('Please enter team names', 'error');
                 return;
             }
 
-            match_app.data_service('/')
+            match_app.request('system/set-data', 'POST', {}, data, function (success) {
+                $(`[insertion-row-id="${time}"]`).remove();
+            })
         });
         $(document).on('click', '.cancel-row-button', function () {
 
             let id = $(this).attr('insertion-button-id');
             $(`[insertion-row-id="${id}"]`).remove();
         })
+
 
     }
 
@@ -265,9 +285,115 @@ $(document).ready(function () {
 
             return columns;
         })
-
-
     }
+
+    function delete_rows() {
+        sessionStorage.selected_columns = [];
+        $(document).on('click', 'tr[role="row"]', function () {
+            if ($('tr.selected').length > 0) {
+                $('#deleteRowBtn').removeAttr('disabled');
+            } else {
+                $('#deleteRowBtn').attr('disabled', 'disabled');
+            }
+        });
+
+
+        $('#delete_row').on('click', function () {
+
+            let deleted_row_ids = [];
+            $('tr.selected').each(function (i, e) {
+                deleted_row_ids.push($(this).attr('row-id'))
+            });
+
+            match_app.request('system/delete-rows', 'DELETE', {}, {'ids': deleted_row_ids}, function (success) {
+                $('tr.selected').remove();
+                $()
+            })
+
+        });
+    }
+
+    function update_rows() {
+
+        $(document).on('click', '[type="id"]', function () {
+            let id = $(this).text().trim();
+
+            if(!isNaN(id)){
+                let edit_buttons = `
+                            <button button-id="${id}" class="btn btn-xs btn-warning edit-row-button add-row-buttons" >EDIT</button>
+                            <button button-id="${id}" class="btn btn-xs btn-default cancel-edit-row-button add-row-buttons">CANCEL</button>`;
+                $(this).html(edit_buttons);
+
+
+                let columns = $(`[row-id="${id}"]`).children();
+
+                columns.each(function () {
+
+                    let column_name = $(this).attr('type');
+                    let column_value = $(this).text();
+
+                    if (column_name != 'id') {
+                        let edit_input = `
+                            <input type="text" value="${column_value}" name="${column_name}" placeholder="${column_name}" style="width: 60px">
+               `;
+                        $(this).html(edit_input);
+                    }
+                });
+            }
+        })
+
+        $(document).on('click', '.edit-row-button', function () {
+
+            let id = $(this).attr('button-id');
+            let columns = $(`[row-id="${id}"]`).children();
+            let data = {};
+            columns.each(function (i,e) {
+
+                console.log(e);
+                let column_name = $(this).attr('type').trim();
+                let column_value = $($(this).children()[0]).val();
+                if(column_name != 'id'){
+                    data[column_name] = column_value;
+                }
+            });
+
+
+
+            match_app.request('system/update-data/'+id,'PUT',{},data,function () {
+
+            });
+
+            remove_row(this);
+        })
+
+        $(document).on('click', '.cancel-edit-row-button', function () {
+            remove_row(this);
+        })
+
+
+        function remove_row(that) {
+
+            let id = $(that).attr('button-id').trim();
+            let parent_cell = $(that).parent();
+            setTimeout(function () {
+                $(parent_cell).html(id)
+            }, 0)
+
+            let cells = $(`[row-id="${id}"]`).children();
+            cells.each(function (i,e) {
+                let input = $(e).children('input')[0];
+
+                let column_name = $(input).attr('name');
+                let column_value = $(input).val();
+                if (column_name != 'id' && column_name != undefined) {
+                    setTimeout(function () {
+                        $(e).html(column_value);
+                    }, 0)
+                }
+            });
+        }
+    }
+
 
     load_columns_data().then(function (data) {
         data_table_initialisation(data.success);
@@ -276,5 +402,6 @@ $(document).ready(function () {
     upload_file();
     show_hide_columns();
     insert_data_row();
-
+    delete_rows();
+    update_rows();
 });
