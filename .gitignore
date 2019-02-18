@@ -23,3 +23,10 @@ Homestead.json
 composer.lock
 composer.lock
 testt.csv
+.idea/matchstats.iml
+.idea/matchstats.iml
+.idea/php.xml
+.idea/workspace.xml
+composer.lock
+package-lock.json
+package.json
