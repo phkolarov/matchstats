@@ -15,12 +15,57 @@
                 <button class="btn btn-success btn-xs" data-toggle="modal" id="showHideColumnsBtn"
                         data-target="#showHideColumnsModal">Show/Hide columns
                 </button>
+
+                <button class="btn btn-success btn-xs" data-toggle="modal" id="obtainSimilarMatchesBtn"
+                        data-target="#obtainSimilarMatchesModal" disabled="disabled">Obtain similar matches
+                </button>
+                <button class="btn btn-danger btn-xs" data-toggle="modal" id="clearFilters">Clear filters
+                </button>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class=" col-lg-12 col-xl-10">
                 <div class="card">
-                    <div class="card-header"><label>Dashboard</label>
+                    <div class="card-header"><label><b>Dashboard</b></label>
+                        <div class="col-lg-12">
+                            <label class=""><span>Match filter obtainers</span></label>
+                        </div>
+                        <div class="col-xs-12 mb-2">
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 22</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 23</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 24</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 25</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 26</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 27</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 28</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 29</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 30</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 31</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 32</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 33</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 34</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 35</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 36</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 37</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 38</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 39</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 40</button>
+                        </div>
+                        <div class="col-xs-12 mb-2">
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 22</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 23</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 24</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 25</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 26</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 27</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 28</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 29</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 30</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 31</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 32</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 33</button>
+                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 34</button>
+                        </div>
                         <table id="data" class="display compact dataTable  table-striped table-bordered"
                                style="width:100%">
                             <thead class="thead-dark">
@@ -28,132 +73,132 @@
                                 <th column_type="id" scope="col">ID</th>
                                 <th column_type="date" scope="col">DATE</th>
                                 <th column_type="time" scope="col">TIME</th>
-                                <th column_type="home_team" scope="col">HOME TEAM</th>
-                                <th column_type="away_team" scope="col">AWAY TEAM</th>
-                                <th column_type="country" scope="col">CNTRY</th>
+                                <th column_type="country" scope="col">CTRY</th>
                                 <th column_type="division" scope="col">DVSN</th>
                                 <th column_type="stage" scope="col">STAGE</th>
                                 <th column_type="play_offs" scope="col">PLOF</th>
                                 <th column_type="eliminations" scope="col">ELIMI</th>
-                                <th column_type="season" scope="col">SEASO</th>
-                                <th column_type="home_team_percent_over_2_5_goals" scope="col">HTPO2,5</th>
-                                <th column_type="home_team_percent_home_success_rate" scope="col">HTPHSR</th>
-                                <th column_type="home_team_percent_total_success_rate" scope="col">HTPTSR</th>
-                                <th column_type="half_time_result_h" scope="col">HTRH</th>
-                                <th column_type="half_time_result_t" scope="col">HTRT</th>
-                                <th column_type="full_time_result_f" scope="col">FTRF</th>
-                                <th column_type="full_time_result_t" scope="col">FTRT</th>
-                                <th column_type="away_team_percent_total_success_rate" scope="col">ATPTSR</th>
-                                <th column_type="away_team_percent_away_success_rate" scope="col">ATPASR</th>
-                                <th column_type="away_team_percent_over_2_5_goals" scope="col">ATPO2,5</th>
+                                <th column_type="season" scope="col">SEAS</th>
+                                <th column_type="home_team_percent_over_2_5_goals" scope="col">HT%O 2,5</th>
+                                <th column_type="home_team_percent_home_success_rate" scope="col">HT% HSR</th>
+                                <th column_type="home_team_percent_total_success_rate" scope="col">HT% TSR</th>
+                                <th column_type="home_team" scope="col" style="width: 60px">HOME TEAM</th>
+                                <th column_type="half_time_result_h" scope="col">H</th>
+                                <th column_type="half_time_result_t" scope="col">T</th>
+                                <th column_type="full_time_result_f" scope="col">F</th>
+                                <th column_type="full_time_result_t" scope="col">T</th>
+                                <th column_type="away_team" scope="col" style="width: 60px">AWAY TEAM</th>
+                                <th column_type="away_team_percent_total_success_rate" scope="col">AT% TSR</th>
+                                <th column_type="away_team_percent_away_success_rate" scope="col">AT% ASR</th>
+                                <th column_type="away_team_percent_over_2_5_goals" scope="col">AT% O2,5</th>
                                 <th column_type="neutral_stadium" scope="col">NS</th>
-                                <th column_type="home_team_to_win" scope="col">HTTW</th>
-                                <th column_type="draw" scope="col">DRAW</th>
-                                <th column_type="away_team_to_win" scope="col">ATTW</th>
-                                <th column_type="home_team_win_or_draw" scope="col">HTWOD</th>
-                                <th column_type="away_team_win_or_draw" scope="col">ATWOD</th>
-                                <th column_type="home_team_or_away_team_win" scope="col">HTOATW</th>
-                                <th column_type="home_team_draw_no_bet" scope="col">HTDNB</th>
-                                <th column_type="away_team_draw_no_bet" scope="col">ATDNB</th>
-                                <th column_type="home_team_over_0_5_goals" scope="col">HTO 0,5</th>
-                                <th column_type="home_team_over_1_5_goals" scope="col">HTO 1,5</th>
-                                <th column_type="home_team_over_2_5_goals" scope="col">HTO 2,5</th>
-                                <th column_type="away_team_over_0_5_goals" scope="col">ATO 0,5</th>
-                                <th column_type="away_team_over_1_5_goals" scope="col">ATO 1,5</th>
-                                <th column_type="away_team_over_2_5_goals" scope="col">ATO 2,5</th>
+                                <th column_type="home_team_to_win" scope="col">1</th>
+                                <th column_type="draw" scope="col">X</th>
+                                <th column_type="away_team_to_win" scope="col">2</th>
+                                <th column_type="home_team_win_or_draw" scope="col">1X</th>
+                                <th column_type="away_team_win_or_draw" scope="col">2X</th>
+                                <th column_type="home_team_or_away_team_win" scope="col">12</th>
+                                <th column_type="home_team_draw_no_bet" scope="col">DNB1</th>
+                                <th column_type="away_team_draw_no_bet" scope="col">DNB2</th>
+                                <th column_type="home_team_over_0_5_goals" scope="col">0,5</th>
+                                <th column_type="home_team_over_1_5_goals" scope="col">1,5</th>
+                                <th column_type="home_team_over_2_5_goals" scope="col">2,5</th>
+                                <th column_type="away_team_over_0_5_goals" scope="col">0,5</th>
+                                <th column_type="away_team_over_1_5_goals" scope="col">1,5</th>
+                                <th column_type="away_team_over_2_5_goals" scope="col">2,5</th>
                                 <th column_type="both_teams_to_score" scope="col">BTTS</th>
-                                <th column_type="total_goals_over_0_5" scope="col">TGO 0,5</th>
-                                <th column_type="total_goals_over_1_5" scope="col">TGO 1,5</th>
-                                <th column_type="total_goals_over_2_5" scope="col">TGO 2,5</th>
-                                <th column_type="total_goals_over_3_5" scope="col">TGO 3,5</th>
-{{--                                                                    <th class="w-20">id</th>--}}
-{{--                                                                    <th class="w-20">date</th>--}}
-{{--                                                                    <th class="w-15">time</th>--}}
-{{--                                                                    <th class="w-20">country</th>--}}
-{{--                                                                    <th class="w-5">division</th>--}}
-{{--                                                                    <th class="w-5">stage</th>--}}
-{{--                                                                    <th class="w-5">play_offs</th>--}}
-{{--                                                                    <th class="w-5">eliminations</th>--}}
-{{--                                                                    <th class="w-5">season</th>--}}
-{{--                                                                    <th class="w-5">home_team_percent_over_2_5_goals</th>--}}
-{{--                                                                    <th class="w-5">home_team_percent_home_success_rate</th>--}}
-{{--                                                                    <th class="w-5">home_team_percent_total_success_rate</th>--}}
-{{--                                                                    <th class="w-20">home_team</th>--}}
-{{--                                                                    <th class="w-5">half_time_result_h</th>--}}
-{{--                                                                    <th class="w-5">half_time_result_t</th>--}}
-{{--                                                                    <th class="w-5">full_time_result_f</th>--}}
-{{--                                                                    <th class="w-5">full_time_result_t</th>--}}
-{{--                                                                    <th class="w-20">away_team</th>--}}
-{{--                                                                    <th class="w-5">away_team_percent_total_success_rate</th>--}}
-{{--                                                                    <th class="w-5">away_team_percent_away_success_rate</th>--}}
-{{--                                                                    <th class="w-5">away_team_percent_over_2_5_goals</th>--}}
-{{--                                                                    <th class="w-5">neutral_stadium</th>--}}
-{{--                                                                    <th class="w-5">home_team_to_win</th>--}}
-{{--                                                                    <th class="w-5">draw</th>--}}
-{{--                                                                    <th class="w-5">away_team_to_win</th>--}}
-{{--                                                                    <th class="w-5">home_team_win_or_draw</th>--}}
-{{--                                                                    <th class="w-5">away_team_win_or_draw</th>--}}
-{{--                                                                    <th class="w-5">home_team_or_away_team_win</th>--}}
-{{--                                                                    <th class="w-5">home_team_draw_no_bet</th>--}}
-{{--                                                                    <th class="w-5">away_team_draw_no_bet</th>--}}
-{{--                                                                    <th class="w-5">home_team_over_0_5_goals</th>--}}
-{{--                                                                    <th class="w-5">home_team_over_1_5_goals</th>--}}
-{{--                                                                    <th class="w-5">home_team_over_2_5_goals</th>--}}
-{{--                                                                    <th class="w-5">away_team_over_0_5_goals</th>--}}
-{{--                                                                    <th class="w-5">away_team_over_1_5_goals</th>--}}
-{{--                                                                    <th class="w-5">away_team_over_2_5_goals</th>--}}
-{{--                                                                    <th class="w-5">both_teams_to_score</th>--}}
-{{--                                                                    <th class="w-5">total_goals_over_0_5</th>--}}
-{{--                                                                    <th class="w-5">total_goals_over_1_5</th>--}}
-{{--                                                                    <th class="w-5">total_goals_over_2_5</th>--}}
-{{--                                                                    <th class="w-5">total_goals_over_3_5</th>--}}
+                                <th column_type="total_goals_over_0_5" scope="col">0,5</th>
+                                <th column_type="total_goals_over_1_5" scope="col">1,5</th>
+                                <th column_type="total_goals_over_2_5" scope="col">2,5</th>
+                                <th column_type="total_goals_over_3_5" scope="col">3,5</th>
+                                {{--                                                                    <th class="w-20">id</th>--}}
+                                {{--                                                                    <th class="w-20">date</th>--}}
+                                {{--                                                                    <th class="w-15">time</th>--}}
+                                {{--                                                                    <th class="w-20">country</th>--}}
+                                {{--                                                                    <th class="w-5">division</th>--}}
+                                {{--                                                                    <th class="w-5">stage</th>--}}
+                                {{--                                                                    <th class="w-5">play_offs</th>--}}
+                                {{--                                                                    <th class="w-5">eliminations</th>--}}
+                                {{--                                                                    <th class="w-5">SEASn</th>--}}
+                                {{--                                                                    <th class="w-5">home_team_percent_over_2_5_goals</th>--}}
+                                {{--                                                                    <th class="w-5">home_team_percent_home_success_rate</th>--}}
+                                {{--                                                                    <th class="w-5">home_team_percent_total_success_rate</th>--}}
+                                {{--                                                                    <th class="w-20">home_team</th>--}}
+                                {{--                                                                    <th class="w-5">half_time_result_h</th>--}}
+                                {{--                                                                    <th class="w-5">half_time_result_t</th>--}}
+                                {{--                                                                    <th class="w-5">full_time_result_f</th>--}}
+                                {{--                                                                    <th class="w-5">full_time_result_t</th>--}}
+                                {{--                                                                    <th class="w-20">away_team</th>--}}
+                                {{--                                                                    <th class="w-5">away_team_percent_total_success_rate</th>--}}
+                                {{--                                                                    <th class="w-5">away_team_percent_away_success_rate</th>--}}
+                                {{--                                                                    <th class="w-5">away_team_percent_over_2_5_goals</th>--}}
+                                {{--                                                                    <th class="w-5">neutral_stadium</th>--}}
+                                {{--                                                                    <th class="w-5">home_team_to_win</th>--}}
+                                {{--                                                                    <th class="w-5">draw</th>--}}
+                                {{--                                                                    <th class="w-5">away_team_to_win</th>--}}
+                                {{--                                                                    <th class="w-5">home_team_win_or_draw</th>--}}
+                                {{--                                                                    <th class="w-5">away_team_win_or_draw</th>--}}
+                                {{--                                                                    <th class="w-5">home_team_or_away_team_win</th>--}}
+                                {{--                                                                    <th class="w-5">home_team_draw_no_bet</th>--}}
+                                {{--                                                                    <th class="w-5">away_team_draw_no_bet</th>--}}
+                                {{--                                                                    <th class="w-5">home_team_over_0_5_goals</th>--}}
+                                {{--                                                                    <th class="w-5">home_team_over_1_5_goals</th>--}}
+                                {{--                                                                    <th class="w-5">home_team_over_2_5_goals</th>--}}
+                                {{--                                                                    <th class="w-5">away_team_over_0_5_goals</th>--}}
+                                {{--                                                                    <th class="w-5">away_team_over_1_5_goals</th>--}}
+                                {{--                                                                    <th class="w-5">away_team_over_2_5_goals</th>--}}
+                                {{--                                                                    <th class="w-5">both_teams_to_score</th>--}}
+                                {{--                                                                    <th class="w-5">total_goals_over_0_5</th>--}}
+                                {{--                                                                    <th class="w-5">total_goals_over_1_5</th>--}}
+                                {{--                                                                    <th class="w-5">total_goals_over_2_5</th>--}}
+                                {{--                                                                    <th class="w-5">total_goals_over_3_5</th>--}}
                             </tr>
                             </thead>
                             <tbody>
                             </tbody>
                             <tfoot>
                             <tr class="">
-                                <th scope="col">ID</th>
-                                <th scope="col">DATE</th>
-                                <th scope="col">TIME</th>
-                                <th scope="col">HOME TEAM</th>
-                                <th scope="col">AWAY TEAM</th>
-                                <th scope="col">CNTRY</th>
-                                <th scope="col">DVSN</th>
-                                <th scope="col">STAGE</th>
-                                <th scope="col">PLOF</th>
-                                <th scope="col">ELIMI</th>
-                                <th scope="col">SEASO</th>
-                                <th scope="col">HTPO2,5</th>
-                                <th scope="col">HTPHSR</th>
-                                <th scope="col">HTPTSR</th>
-                                <th scope="col">HTRH</th>
-                                <th scope="col">HTRT</th>
-                                <th scope="col">FTRF</th>
-                                <th scope="col">FTRT</th>
-                                <th scope="col">ATPTSR</th>
-                                <th scope="col">ATPASR</th>
-                                <th scope="col">ATPO2,5</th>
-                                <th scope="col">NS</th>
-                                <th scope="col">HTTW</th>
-                                <th scope="col">DRAW</th>
-                                <th scope="col">ATTW</th>
-                                <th scope="col">HTWOD</th>
-                                <th scope="col">ATWOD</th>
-                                <th scope="col">HTOATW</th>
-                                <th scope="col">HTDNB</th>
-                                <th scope="col">ATDNB</th>
-                                <th scope="col">HTO 0,5</th>
-                                <th scope="col">HTO 1,5</th>
-                                <th scope="col">HTO 2,5</th>
-                                <th scope="col">ATO 0,5</th>
-                                <th scope="col">ATO 1,5</th>
-                                <th scope="col">ATO 2,5</th>
-                                <th scope="col">BTTS</th>
-                                <th scope="col">TGO 0,5</th>
-                                <th scope="col">TGO 1,5</th>
-                                <th scope="col">TGO 2,5</th>
-                                <th scope="col">TGO 3,5</th>
+                                <th column_type="id" scope="col">ID</th>
+                                <th column_type="date" scope="col">DATE</th>
+                                <th column_type="time" scope="col">TIME</th>
+                                <th column_type="country" scope="col">CTRY</th>
+                                <th column_type="division" scope="col">DVSN</th>
+                                <th column_type="stage" scope="col">STAGE</th>
+                                <th column_type="play_offs" scope="col">PLOF</th>
+                                <th column_type="eliminations" scope="col">ELIMI</th>
+                                <th column_type="season" scope="col">SEAS</th>
+                                <th column_type="home_team_percent_over_2_5_goals" scope="col">HT%O 2,5</th>
+                                <th column_type="home_team_percent_home_success_rate" scope="col">HT% HSR</th>
+                                <th column_type="home_team_percent_total_success_rate" scope="col">HT% TSR</th>
+                                <th column_type="home_team" scope="col" style="width: 60px">HOME TEAM</th>
+                                <th column_type="half_time_result_h" scope="col">H</th>
+                                <th column_type="half_time_result_t" scope="col">T</th>
+                                <th column_type="full_time_result_f" scope="col">F</th>
+                                <th column_type="full_time_result_t" scope="col">T</th>
+                                <th column_type="away_team" scope="col" style="width: 60px">AWAY TEAM</th>
+                                <th column_type="away_team_percent_total_success_rate" scope="col">AT% TSR</th>
+                                <th column_type="away_team_percent_away_success_rate" scope="col">AT% ASR</th>
+                                <th column_type="away_team_percent_over_2_5_goals" scope="col">AT% O2,5</th>
+                                <th column_type="neutral_stadium" scope="col">NS</th>
+                                <th column_type="home_team_to_win" scope="col">1</th>
+                                <th column_type="draw" scope="col">X</th>
+                                <th column_type="away_team_to_win" scope="col">2</th>
+                                <th column_type="home_team_win_or_draw" scope="col">1X</th>
+                                <th column_type="away_team_win_or_draw" scope="col">2X</th>
+                                <th column_type="home_team_or_away_team_win" scope="col">12</th>
+                                <th column_type="home_team_draw_no_bet" scope="col">DNB1</th>
+                                <th column_type="away_team_draw_no_bet" scope="col">DNB2</th>
+                                <th column_type="home_team_over_0_5_goals" scope="col">0,5</th>
+                                <th column_type="home_team_over_1_5_goals" scope="col">1,5</th>
+                                <th column_type="home_team_over_2_5_goals" scope="col">2,5</th>
+                                <th column_type="away_team_over_0_5_goals" scope="col">0,5</th>
+                                <th column_type="away_team_over_1_5_goals" scope="col">1,5</th>
+                                <th column_type="away_team_over_2_5_goals" scope="col">2,5</th>
+                                <th column_type="both_teams_to_score" scope="col">BTTS</th>
+                                <th column_type="total_goals_over_0_5" scope="col">0,5</th>
+                                <th column_type="total_goals_over_1_5" scope="col">1,5</th>
+                                <th column_type="total_goals_over_2_5" scope="col">2,5</th>
+                                <th column_type="total_goals_over_3_5" scope="col">3,5</th>
                             </tr>
                             </tfoot>
                         </table>
@@ -237,7 +282,38 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-                            <button type="button" id="save_show_hide_columns" class="btn btn-success btn-sm">Save columns</button>
+                            <button type="button" id="save_show_hide_columns" class="btn btn-success btn-sm">Save
+                                columns
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="obtainSimilarMatchesModal" tabindex="-1" role="dialog"
+             aria-labelledby="obtainSimilarMatchesLabel"
+             aria-hidden="true">
+            <form method="post" id="testid" enctype="multipart/form-data">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"><strong>Obtain similar </strong><span
+                                        class="box__dragndrop">matches</span>.</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <table id="obtainSimilarMatchesTable">
+
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
                         </div>
                     </div>
 

@@ -26,6 +26,25 @@ $(document).ready(function () {
                 })
             }
 
+            // Setup - add a text input to each footer cell
+            $('#data tfoot th').each(function (i, el) {
+                var title = $(this).text();
+                let width = 20;
+                if (title == 'HOME TEAM' || title == 'AWAY TEAM'  ) {
+                    width = 81;
+                }
+
+                if( title == 'DATE'){
+                    width = 61;
+                }
+
+                if( title == 'TIME'){
+                    width = 41;
+                }
+
+                $(this).html(`<input style="width: ${width}px" type="text" placeholder="${title}" />`);
+            });
+
 
             // DataTable
             var table = $('#data').DataTable(
@@ -39,11 +58,19 @@ $(document).ready(function () {
                             "Authorization": "Bearer " + localStorage.access_token
                         }
                     },
+                    "pageLength": 15,
+                    "lengthMenu": [[10, 15, 25, 50], [10, 15, 25, 50]],
                     rowCallback: function (row, data) {
 
                         $(row).attr('row-id', data.id);
                     },
-                    "columns": columns
+                    "columns": columns,
+                    "initComplete": function () {
+                        var api = this.api();
+                        api.$('td').click( function () {
+                            api.search( this.innerHTML ).draw();
+                        } );
+                    }
                 }
             );
 
@@ -60,24 +87,19 @@ $(document).ready(function () {
             table.columns().every(function () {
                 var that = this;
 
-                $('input', this.footer()).on('keyup change', function () {
+
+                $('input', this.footer()).on('propertychange change click keyup input paste', function () {
                     if (that.search() !== this.value) {
                         that
                             .search(this.value)
                             .draw();
                     }
                 });
+
+
             });
 
-            // Setup - add a text input to each footer cell
-            $('#data tfoot th').each(function (i, el) {
-                var title = $(this).text();
-                let width = 33;
-                if (i == 0) {
-                    width = 61;
-                }
-                $(this).html(`<input style="width: ${width}px" type="text" placeholder="${title}" />`);
-            });
+
         });
     }
 
@@ -307,7 +329,7 @@ $(document).ready(function () {
 
             match_app.request('system/delete-rows', 'DELETE', {}, {'ids': deleted_row_ids}, function (success) {
                 $('tr.selected').remove();
-                $()
+                $('#deleteRowModal').modal('hide');
             })
 
         });
@@ -318,7 +340,7 @@ $(document).ready(function () {
         $(document).on('click', '[type="id"]', function () {
             let id = $(this).text().trim();
 
-            if(!isNaN(id)){
+            if (!isNaN(id)) {
                 let edit_buttons = `
                             <button button-id="${id}" class="btn btn-xs btn-warning edit-row-button add-row-buttons" >EDIT</button>
                             <button button-id="${id}" class="btn btn-xs btn-default cancel-edit-row-button add-row-buttons">CANCEL</button>`;
@@ -347,19 +369,18 @@ $(document).ready(function () {
             let id = $(this).attr('button-id');
             let columns = $(`[row-id="${id}"]`).children();
             let data = {};
-            columns.each(function (i,e) {
+            columns.each(function (i, e) {
 
                 console.log(e);
                 let column_name = $(this).attr('type').trim();
                 let column_value = $($(this).children()[0]).val();
-                if(column_name != 'id'){
+                if (column_name != 'id') {
                     data[column_name] = column_value;
                 }
             });
 
 
-
-            match_app.request('system/update-data/'+id,'PUT',{},data,function () {
+            match_app.request('system/update-data/' + id, 'PUT', {}, data, function () {
 
             });
 
@@ -380,7 +401,7 @@ $(document).ready(function () {
             }, 0)
 
             let cells = $(`[row-id="${id}"]`).children();
-            cells.each(function (i,e) {
+            cells.each(function (i, e) {
                 let input = $(e).children('input')[0];
 
                 let column_name = $(input).attr('name');
@@ -394,11 +415,72 @@ $(document).ready(function () {
         }
     }
 
+    function obtain_similar_data() {
+
+        $(document).on('click', 'tr[role="row"]', function () {
+            if ($('tr.selected').length == 1) {
+                $('#obtainSimilarMatchesBtn').removeAttr('disabled');
+            } else {
+                $('#obtainSimilarMatchesBtn').attr('disabled', 'disabled');
+            }
+        });
+
+
+        $('#obtainSimilarMatchesBtn').on('click', function () {
+
+            let selected = $('tr.selected').children();
+            let obtained_row_data = `
+            <tr class="d-flex" >
+                <th  class="col-5">column name</th>
+                <th  class="col-4">column value</th>
+                <th  class="col-3"></th>
+            </tr>
+            `;
+
+            selected.each(function (i, e) {
+
+                let name = $(e).attr('type');
+                let value = $(e).text().trim();
+
+                if (name != 'id') {
+                    obtained_row_data += `
+                <tr class="d-flex">
+                    <td class="col-5"><b>${name}</b></td>
+                    <td class="col-4"><b>${value}</b></td>
+                    <td class="col-3"><button type="button" class="btn btn-info btn-xs obtain_data" o_type="${name}" o_value="${value}">obtain data</button></td>
+                </tr>
+                ` }
+
+            })
+            $('#obtainSimilarMatchesTable').html(obtained_row_data);
+        })
+
+        $(document).on('click','.obtain_data',function () {
+
+            let fieldName = $(this).attr('o_type');
+            let fieldValue = $(this).attr('o_value');
+
+            let input_field = $(`[column_type="${fieldName}"]`).children();
+
+            let input = $(input_field);
+            input.val(fieldValue);
+            input.trigger('change');
+            match_app.message('Obtained','success');
+            console.log(input_field)
+        })
+        
+        $('#clearFilters').on('click',function () {
+            $('th input').val('')
+            $('th input').trigger('change')
+        })
+    }
 
     load_columns_data().then(function (data) {
         data_table_initialisation(data.success);
     });
 
+
+    obtain_similar_data();
     upload_file();
     show_hide_columns();
     insert_data_row();
