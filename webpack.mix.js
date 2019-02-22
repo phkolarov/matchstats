@@ -21,7 +21,11 @@ mix.styles([
     'node_modules/datatables.net-dt/css/jquery.dataTables.css',
 ], 'public/css/all.css');
 
-mix.scripts([
+mix.babel([
     'node_modules/noty/lib/noty.js',
-    'node_modules/datatables.net/js/jquery.dataTables.js'
+    'node_modules/popper.js/popper.js',
+    'node_modules/popper.js/popper-utils.js',
+    'node_modules/tippy.js/umd/index.all.js',
+    'node_modules/datatables.net/js/jquery.dataTables.js',
+
 ], 'public/js/all.js');

@@ -2,107 +2,110 @@ $(document).ready(function () {
 
     let token = ('{{\Auth::user()->api_token}}');
     let csrf = ('X-CSRF-TOKEN: {{ csrf_token() }}');
+    let datatable = null;
+
     sessionStorage.country = $(this).val();
     sessionStorage.division = $(this).val();
 
 
-    function data_table_initialisation(columns_array) {
+    function data_table_rendering(columns_array) {
 
-        $(document).ready(function () {
+        let columns = [];
+        for (let column in columns_array) {
 
-            let columns = [];
-            for (let column in columns_array) {
+            let column_name = columns_array[column];
+            let visible = localStorage[column_name] != "false";// ? false : true;
 
-                let column_name = columns_array[column];
-                let visible = localStorage[column_name] == "false" ? false : true;
+            columns.push({
+                'data': columns_array[column],
+                'visible': visible,
+                'className': column_name,
+                "createdCell": function (td, cellData, rowData, row, col) {
+                    $(td).attr('type', column_name);
+                }
+            })
+        }
 
-                columns.push({
-                    'data': columns_array[column],
-                    'visible': visible,
-                    'className': column_name,
-                    "createdCell": function (td, cellData, rowData, row, col) {
-                        $(td).attr('type', column_name);
-                    }
-                })
+        // Setup - add a text input to each footer cell
+        $('#data tfoot th').each(function (i, el) {
+            var title = $(this).text();
+            let width = 20;
+
+            switch (title) {
+                case 'HOME TEAM':
+                    width = 81;
+                    break;
+                case 'AWAY TEAM':
+                    width = 81;
+                    break;
+                case 'DATE':
+                    width = 61;
+                    break;
+                case 'TIME':
+                    width = 41;
+                    break;
             }
 
-            // Setup - add a text input to each footer cell
-            $('#data tfoot th').each(function (i, el) {
-                var title = $(this).text();
-                let width = 20;
-                if (title == 'HOME TEAM' || title == 'AWAY TEAM'  ) {
-                    width = 81;
-                }
-
-                if( title == 'DATE'){
-                    width = 61;
-                }
-
-                if( title == 'TIME'){
-                    width = 41;
-                }
-
-                $(this).html(`<input style="width: ${width}px" type="text" placeholder="${title}" />`);
-            });
-
-
-            // DataTable
-            var table = $('#data').DataTable(
-                {
-                    "processing": true,
-                    "serverSide": true,
-                    "ajax": {
-                        "url": "public/api/system/get-data-table",
-                        "type": "POST",
-                        "headers": {
-                            "Authorization": "Bearer " + localStorage.access_token
-                        }
-                    },
-                    "pageLength": 15,
-                    "lengthMenu": [[10, 15, 25, 50], [10, 15, 25, 50]],
-                    rowCallback: function (row, data) {
-
-                        $(row).attr('row-id', data.id);
-                    },
-                    "columns": columns,
-                    "initComplete": function () {
-                        var api = this.api();
-                        api.$('td').click( function () {
-                            api.search( this.innerHTML ).draw();
-                        } );
-                    }
-                }
-            );
-
-            //adding multiselection
-            $('#data tbody').on('click', 'tr', function () {
-                $(this).toggleClass('selected');
-            });
-
-            $('#button').click(function () {
-                alert(table.rows('.selected').data().length + ' row(s) selected');
-            });
-
-            // Apply the search
-            table.columns().every(function () {
-                var that = this;
-
-
-                $('input', this.footer()).on('propertychange change click keyup input paste', function () {
-                    if (that.search() !== this.value) {
-                        that
-                            .search(this.value)
-                            .draw();
-                    }
-                });
-
-
-            });
-
-
+            $(this).html(`<input style="width: ${width}px" type="text" placeholder="${title}" />`);
         });
-    }
 
+        //adding multiselection
+        $('#data tbody').on('click', 'tr', function () {
+            $(this).toggleClass('selected');
+        });
+
+        $('#button').click(function () {
+            alert(table.rows('.selected').data().length + ' row(s) selected');
+        });
+
+        // DataTable
+        let table = $('#data').DataTable(
+            {
+                "processing": true,
+                "serverSide": true,
+                "ajax": {
+                    "url": "public/api/system/get-data-table",
+                    "type": "POST",
+                    "headers": {
+                        "Authorization": "Bearer " + localStorage.access_token
+                    }
+                },
+                "pageLength": 15,
+                "lengthMenu": [[10, 15, 25, 50], [10, 15, 25, 50]],
+                rowCallback: function (row, data) {
+
+                    $(row).attr('row-id', data.id);
+                },
+                "columns": columns,
+                "initComplete": function () {
+                    var api = this.api();
+                    // api.$('td').click(function () {
+                    //     api.search(this.innerHTML).draw();
+                    // });
+                }
+            }
+        );
+
+        // Apply the search
+        table.columns().every(function (i,e) {
+
+
+            var that = this;
+
+            $('input', this.footer()).on('propertychange change click keyup input paste', function () {
+
+                if (that.search() !== "") {
+                    console.log(i);
+
+                    // that.columns([22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40]).search(this.value).draw();
+                    that
+                        .search(this.value);
+                }
+            });
+        });
+
+        return table;
+    }
 
     function insert_data_row() {
 
@@ -126,14 +129,22 @@ $(document).ready(function () {
                 `;
                 } else {
 
+                    let width = 30;
                     let picker_type = '';
+                    console.log(column_name);
                     if (column_name == 'date') {
                         picker_type = 'picker-type="date"';
+                        width = 60;
                     } else if (column_name == 'time') {
                         picker_type = 'picker-type="time"';
+                        width = 60;
+                    } else if (column_name == 'home_team') {
+                        width = 60;
+                    } else if (column_name == 'away_team') {
+                        width = 60;
                     }
                     row_string += `
-                    <td>${add_button_string}<input  ${picker_type} time="${date.getTime()}" style="width: 60px" type="text" placeholder="${column_name}">${cancel_button_string}</td>
+                    <td>${add_button_string}<input  ${picker_type} time="${date.getTime()}" style="width: ${width}px" type="text" placeholder="${column_name}">${cancel_button_string}</td>
                 `;
                 }
             });
@@ -277,9 +288,9 @@ $(document).ready(function () {
         })
     }
 
-    function load_columns_data() {
+    function load_columns_data(filters = {}) {
 
-        return match_app.request('system/get-columns', 'GET', [], [], function (data) {
+        return match_app.request('system/get-columns', 'GET', [], filters, function (data) {
 
             let columns = data.success;
             let element = `<tr>`;
@@ -420,8 +431,10 @@ $(document).ready(function () {
         $(document).on('click', 'tr[role="row"]', function () {
             if ($('tr.selected').length == 1) {
                 $('#obtainSimilarMatchesBtn').removeAttr('disabled');
+                $('.obtainer_btn').removeAttr('disabled');
             } else {
                 $('#obtainSimilarMatchesBtn').attr('disabled', 'disabled');
+                $('.obtainer_btn').attr('disabled', 'disabled');
             }
         });
 
@@ -449,13 +462,14 @@ $(document).ready(function () {
                     <td class="col-4"><b>${value}</b></td>
                     <td class="col-3"><button type="button" class="btn btn-info btn-xs obtain_data" o_type="${name}" o_value="${value}">obtain data</button></td>
                 </tr>
-                ` }
+                `
+                }
 
             })
             $('#obtainSimilarMatchesTable').html(obtained_row_data);
         })
 
-        $(document).on('click','.obtain_data',function () {
+        $(document).on('click', '.obtain_data', function () {
 
             let fieldName = $(this).attr('o_type');
             let fieldValue = $(this).attr('o_value');
@@ -465,20 +479,46 @@ $(document).ready(function () {
             let input = $(input_field);
             input.val(fieldValue);
             input.trigger('change');
-            match_app.message('Obtained','success');
-            console.log(input_field)
+            match_app.message('Obtained', 'success');
         })
-        
-        $('#clearFilters').on('click',function () {
+
+        $('#clearFilters').on('click', function () {
             $('th input').val('')
             $('th input').trigger('change')
         })
     }
 
-    load_columns_data().then(function (data) {
-        data_table_initialisation(data.success);
-    });
+    function filters(datatable) {
 
+        $('.obtainer_btn').on('click', function () {
+
+            let column = $($(this).parent()[0]).attr('column_type');
+            let selected_row = ($('tr.selected')[0]);
+            $('tfoot>tr> th>input').val('');
+
+            for (let el in settings) {
+                let column_settings = settings[el];
+                if (column_settings.skip_filter == true && el != column) {
+                    let filter_value = $('tr.selected' + ` [type="${el}"]`).text().trim()
+                    $(`[column_type="${el}"] input`).val(filter_value);
+                } else if (column_settings.skip_filter == true && el == column) {
+                    console.log(el)
+                }
+            }
+
+            datatable.draw();
+
+            $($('tfoot>tr> th>input')).trigger('change')
+            // load_columns_data({'skip_filter_column': '123'});
+            // datatable.ajax.reload();
+        })
+    }
+
+
+    load_columns_data().then(function (data) {
+        datatable = data_table_rendering(data.success);
+        filters(datatable);
+    });
 
     obtain_similar_data();
     upload_file();

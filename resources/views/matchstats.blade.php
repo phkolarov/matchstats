@@ -27,55 +27,146 @@
             <div class=" col-lg-12 col-xl-10">
                 <div class="card">
                     <div class="card-header"><label><b>Dashboard</b></label>
-                        <div class="col-lg-12">
-                            <label class=""><span>Match filter obtainers</span></label>
+                        <div class="">
+                            <label class=""><span class="filter_title">Custom filter obtainers</span></label>
+                            <div class="mb-3">
+                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 1</button>
+                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 2</button>
+                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 3</button>
+                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 4</button>
+                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 5</button>
+                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 6</button>
+                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 7</button>
+                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 8</button>
+                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 9</button>
+                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 10</button>
+                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 11</button>
+                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 12</button>
+                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 13</button>
+                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 14</button>
+                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 15</button>
+                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 16</button>
+                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 17</button>
+                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 18</button>
+
+
+                            </div>
                         </div>
-                        <div class="col-xs-12 mb-2">
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 22</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 23</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 24</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 25</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 26</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 27</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 28</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 29</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 30</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 31</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 32</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 33</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 34</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 35</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 36</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 37</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 38</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 39</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 40</button>
-                        </div>
-                        <div class="col-xs-12 mb-2">
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 22</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 23</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 24</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 25</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 26</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 27</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 28</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 29</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 30</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 31</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 32</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 33</button>
-                            <button class="btn btn-info btn-xs" data-toggle="modal" id="clearFilters"> w/o - 34</button>
-                        </div>
+
                         <table id="data" class="display compact dataTable  table-striped table-bordered"
                                style="width:100%">
                             <thead class="thead-dark">
+                            <tr class="">
+                                <th class="obtain_column_buttons" column_type="id" scope="col">
+                                    <button class="btn btn-info obtainer_btn"  data-toggle="modal" >All</button>
+                                </th>
+                                <th class="obtain_column_buttons" column_type="date" scope="col">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="time" scope="col">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="country" scope="col">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="division" scope="col">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="stage" scope="col">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="play_offs" scope="col">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="eliminations" scope="col">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="season" scope="col">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="home_team_percent_over_2_5_goals" scope="col">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="home_team_percent_home_success_rate" scope="col">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="home_team_percent_total_success_rate" scope="col">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="home_team" scope="col" style="width: 60px">
+                                </th>
+                                <th column_type="half_time_result_h" scope="col">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="half_time_result_t" scope="col">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="full_time_result_f" scope="col">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="full_time_result_t" scope="col">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="away_team" scope="col" style="width: 60px">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="away_team_percent_total_success_rate" scope="col">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="away_team_percent_away_success_rate" scope="col">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="away_team_percent_over_2_5_goals" scope="col">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="neutral_stadium" scope="col">
+                                </th>
+                                <th class="obtain_column_buttons" column_type="home_team_to_win" scope="col">
+                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                </th>
+                                <th class="obtain_column_buttons" column_type="draw" scope="col">
+                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                </th>
+                                <th class="obtain_column_buttons" column_type="away_team_to_win" scope="col">
+                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                </th>
+                                <th class="obtain_column_buttons" column_type="home_team_win_or_draw" scope="col">
+                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                </th>
+                                <th class="obtain_column_buttons" column_type="away_team_win_or_draw" scope="col">
+                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                </th>
+                                <th class="obtain_column_buttons" column_type="home_team_or_away_team_win" scope="col">
+                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                </th>
+                                <th class="obtain_column_buttons" column_type="home_team_draw_no_bet" scope="col">
+                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                </th>
+                                <th class="obtain_column_buttons" column_type="away_team_draw_no_bet" scope="col">
+                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                </th>
+                                <th class="obtain_column_buttons" column_type="home_team_over_0_5_goals" scope="col">
+                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                </th>
+                                <th class="obtain_column_buttons" column_type="home_team_over_1_5_goals" scope="col">
+                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                </th>
+                                <th class="obtain_column_buttons" column_type="home_team_over_2_5_goals" scope="col">
+                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                </th>
+                                <th class="obtain_column_buttons" column_type="away_team_over_0_5_goals" scope="col">
+                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                </th>
+                                <th class="obtain_column_buttons" column_type="away_team_over_1_5_goals" scope="col">
+                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                </th>
+                                <th class="obtain_column_buttons" column_type="away_team_over_2_5_goals" scope="col">
+                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                </th>
+                                <th class="obtain_column_buttons" column_type="both_teams_to_score" scope="col">
+                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                </th>
+                                <th class="obtain_column_buttons" column_type="total_goals_over_0_5" scope="col">
+                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                </th>
+                                <th class="obtain_column_buttons" column_type="total_goals_over_1_5" scope="col">
+                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                </th>
+                                <th class="obtain_column_buttons" column_type="total_goals_over_2_5" scope="col">
+                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                </th>
+                                <th class="obtain_column_buttons" column_type="total_goals_over_3_5" scope="col">
+                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                </th>
+                            </tr>
                             <tr class="">
                                 <th column_type="id" scope="col">ID</th>
                                 <th column_type="date" scope="col">DATE</th>
                                 <th column_type="time" scope="col">TIME</th>
                                 <th column_type="country" scope="col">CTRY</th>
-                                <th column_type="division" scope="col">DVSN</th>
-                                <th column_type="stage" scope="col">STAGE</th>
+                                <th column_type="division" scope="col">DVS</th>
+                                <th column_type="stage" scope="col">STG</th>
                                 <th column_type="play_offs" scope="col">PLOF</th>
                                 <th column_type="eliminations" scope="col">ELIMI</th>
                                 <th column_type="season" scope="col">SEAS</th>
@@ -111,47 +202,6 @@
                                 <th column_type="total_goals_over_1_5" scope="col">1,5</th>
                                 <th column_type="total_goals_over_2_5" scope="col">2,5</th>
                                 <th column_type="total_goals_over_3_5" scope="col">3,5</th>
-                                {{--                                                                    <th class="w-20">id</th>--}}
-                                {{--                                                                    <th class="w-20">date</th>--}}
-                                {{--                                                                    <th class="w-15">time</th>--}}
-                                {{--                                                                    <th class="w-20">country</th>--}}
-                                {{--                                                                    <th class="w-5">division</th>--}}
-                                {{--                                                                    <th class="w-5">stage</th>--}}
-                                {{--                                                                    <th class="w-5">play_offs</th>--}}
-                                {{--                                                                    <th class="w-5">eliminations</th>--}}
-                                {{--                                                                    <th class="w-5">SEASn</th>--}}
-                                {{--                                                                    <th class="w-5">home_team_percent_over_2_5_goals</th>--}}
-                                {{--                                                                    <th class="w-5">home_team_percent_home_success_rate</th>--}}
-                                {{--                                                                    <th class="w-5">home_team_percent_total_success_rate</th>--}}
-                                {{--                                                                    <th class="w-20">home_team</th>--}}
-                                {{--                                                                    <th class="w-5">half_time_result_h</th>--}}
-                                {{--                                                                    <th class="w-5">half_time_result_t</th>--}}
-                                {{--                                                                    <th class="w-5">full_time_result_f</th>--}}
-                                {{--                                                                    <th class="w-5">full_time_result_t</th>--}}
-                                {{--                                                                    <th class="w-20">away_team</th>--}}
-                                {{--                                                                    <th class="w-5">away_team_percent_total_success_rate</th>--}}
-                                {{--                                                                    <th class="w-5">away_team_percent_away_success_rate</th>--}}
-                                {{--                                                                    <th class="w-5">away_team_percent_over_2_5_goals</th>--}}
-                                {{--                                                                    <th class="w-5">neutral_stadium</th>--}}
-                                {{--                                                                    <th class="w-5">home_team_to_win</th>--}}
-                                {{--                                                                    <th class="w-5">draw</th>--}}
-                                {{--                                                                    <th class="w-5">away_team_to_win</th>--}}
-                                {{--                                                                    <th class="w-5">home_team_win_or_draw</th>--}}
-                                {{--                                                                    <th class="w-5">away_team_win_or_draw</th>--}}
-                                {{--                                                                    <th class="w-5">home_team_or_away_team_win</th>--}}
-                                {{--                                                                    <th class="w-5">home_team_draw_no_bet</th>--}}
-                                {{--                                                                    <th class="w-5">away_team_draw_no_bet</th>--}}
-                                {{--                                                                    <th class="w-5">home_team_over_0_5_goals</th>--}}
-                                {{--                                                                    <th class="w-5">home_team_over_1_5_goals</th>--}}
-                                {{--                                                                    <th class="w-5">home_team_over_2_5_goals</th>--}}
-                                {{--                                                                    <th class="w-5">away_team_over_0_5_goals</th>--}}
-                                {{--                                                                    <th class="w-5">away_team_over_1_5_goals</th>--}}
-                                {{--                                                                    <th class="w-5">away_team_over_2_5_goals</th>--}}
-                                {{--                                                                    <th class="w-5">both_teams_to_score</th>--}}
-                                {{--                                                                    <th class="w-5">total_goals_over_0_5</th>--}}
-                                {{--                                                                    <th class="w-5">total_goals_over_1_5</th>--}}
-                                {{--                                                                    <th class="w-5">total_goals_over_2_5</th>--}}
-                                {{--                                                                    <th class="w-5">total_goals_over_3_5</th>--}}
                             </tr>
                             </thead>
                             <tbody>

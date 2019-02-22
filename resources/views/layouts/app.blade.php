@@ -27,6 +27,7 @@
     <script src="{{ asset('public/libs/date-time-picker/jquery.datetimepicker.full.min.js')}}" defer></script>
     <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="{{asset('public/js/all.js')}}"></script>
+    <script src="{{asset('public/js/column_settings.js')}}"></script>
     <script src="{{ asset('public/js/match_stats_app.js') }}" defer></script>
     <script src="{{ asset('public/js/data_service.js') }}" defer></script>
 

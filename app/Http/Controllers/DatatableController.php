@@ -27,7 +27,11 @@ class DatatableController extends Controller
             if ($column['searchable'] == "true" && in_array($column['data'], $columns)) {
                 $searched_data = $column['search']['value'];
                 if ($searched_data != '' && $searched_data != null) {
-                    $data->where($column['data'], 'like', '%'.$searched_data.'%');
+                    if(is_numeric($searched_data)){
+                        $data->where($column['data'], '=', $searched_data);
+                    }else{
+                        $data->where($column['data'], 'like', '%'.$searched_data.'%');
+                    }
                 }
             }
         }

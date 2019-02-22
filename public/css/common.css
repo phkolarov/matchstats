@@ -9,7 +9,7 @@ th{
 }
 
 table{
-    font-size: 12px;
+    font-size: 11px;
     text-align: center;
 
 }
@@ -18,6 +18,21 @@ thead>tr>th{
     font-weight: bold;
 }
 
+table.dataTable.compact thead th, table.dataTable.compact thead td{
+    padding: 2px;
+    text-align: center;
+
+}
+.obtain_column_buttons{
+    padding: 2px !important;
+}
+.btn-group-xs > .btn,  .obtainer_btn{
+    padding: .40rem 0.2rem;
+    font-size: .75rem;
+    line-height: .4;
+    border-radius: .2rem;
+    font-weight: bold;
+}
 .btn-group-xs > .btn, .btn-xs {
     padding  : .40rem .6rem;
     font-size  : .875rem;
@@ -25,9 +40,13 @@ thead>tr>th{
     border-radius : .2rem;
 }
 
+.filter_title{
+    font-style: italic;
+    font-size: 14px;
+}
+
 .card-header{
     overflow: auto;
-
 }
 
 .add-row-buttons
