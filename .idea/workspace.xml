@@ -6,19 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bcbe3d20-6e9f-43b3-a784-8b5e61bf5521" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DatatableController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DatatableController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/all.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/common.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/all.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/match_stats_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/match_stats_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/matchstats_page_files/column_settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/column_settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/column_settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/column_settings.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/matchstats_page_files/matchstats_common_data_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/matchstats_page_files/matchstats_common_data_page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/matchstats.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/matchstats.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,17 +44,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="29" column="69" lean-forward="true" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
+            <state relative-caret-position="271">
+              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/matchstats_page_files/matchstats_common_data_page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="508" column="22" selection-start-line="508" selection-start-column="22" selection-end-line="508" selection-end-column="22" />
+            <state relative-caret-position="295">
+              <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#td#0;n#!!top" expanded="true" />
@@ -74,28 +65,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/match_stats_app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/column_settings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="51">
+              <caret line="3" column="67" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webpack.mix.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.mix.js">
+        <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/all.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15765">
+              <caret line="3664" column="25" selection-start-line="3664" selection-start-column="25" selection-end-line="3664" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/popper.js/dist/popper-utils.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-16646">
+              <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -111,13 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>column-option</find>
-      <find>cancel-row-button</find>
-      <find>var</find>
-      <find>delete</find>
-      <find>removeAttr</find>
-      <find>CNTRY</find>
-      <find>obtain-filter-number=&quot;22&quot;</find>
       <find>th column_type=&quot;</find>
       <find>obtainer</find>
       <find>data_wrapper</find>
@@ -139,8 +141,15 @@
       <find>selecte</find>
       <find>complerte</find>
       <find>toLo</find>
-      <find>home_team_</find>
       <find>columns()</find>
+      <find>change</find>
+      <find>n</find>
+      <find>table</find>
+      <find>datatable</find>
+      <find>datatab</find>
+      <find>c</find>
+      <find>factory(jQuery,window,document);}})(function($,window,document,undefined){&quot;use strict&quot;;/**</find>
+      <find>home_team_</find>
     </findStrings>
     <replaceStrings>
       <replace>35px</replace>
@@ -166,14 +175,16 @@
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/public/css/common.css" />
-        <option value="$PROJECT_DIR$/webpack.mix.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/DatatableController.php" />
         <option value="$PROJECT_DIR$/public/js/matchstats_page_files/column_settings.js" />
-        <option value="$PROJECT_DIR$/public/js/column_settings.js" />
         <option value="$PROJECT_DIR$/public/js/match_stats_app.js" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/matchstats.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/column_settings.js" />
         <option value="$PROJECT_DIR$/public/js/matchstats_page_files/matchstats_common_data_page.js" />
+        <option value="$PROJECT_DIR$/public/js/popper.in.js" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/js/bootstrap.js" />
+        <option value="$PROJECT_DIR$/webpack.mix.js" />
       </list>
     </option>
   </component>
@@ -280,7 +291,7 @@
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1924" />
@@ -321,6 +332,40 @@
               <item name="matchstats" type="b2602c69:ProjectViewProjectNode" />
               <item name="matchstats" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matchstats" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matchstats" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matchstats" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matchstats" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="popper.js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matchstats" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matchstats" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="popper.js" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matchstats" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matchstats" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="popper.js" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="esm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="matchstats" type="b2602c69:ProjectViewProjectNode" />
+              <item name="matchstats" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="popper.js" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="umd" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="matchstats" type="b2602c69:ProjectViewProjectNode" />
@@ -445,15 +490,15 @@
       <workItem from="1548325945376" duration="6674000" />
       <workItem from="1548400933915" duration="24637000" />
       <workItem from="1549740981684" duration="24232000" />
-      <workItem from="1550128814525" duration="67719000" />
+      <workItem from="1550128814525" duration="72705000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123262000" />
+    <option name="totallyTimeSpent" value="128248000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1874" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2012128" />
@@ -542,11 +587,6 @@
     <entry file="file://$PROJECT_DIR$/storage/oauth-private.key">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -579,13 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1249">
-          <caret line="3123" column="4" selection-start-line="3123" selection-start-column="4" selection-end-line="3123" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -630,27 +663,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/popper.js/dist/popper-utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/popper.js/dist/popper.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/popper.js/dist/esm/popper-utils.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/js/popper.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/popper.js/dist/umd/poppper.js.flow">
       <provider selected="true" editor-type-id="text-editor" />
@@ -679,20 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/column_settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/match_stats_app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
@@ -700,10 +703,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+    <entry file="file://$PROJECT_DIR$/node_modules/datatables.net/js/jquery.dataTables.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="69" lean-forward="true" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
+        <state relative-caret-position="311">
+          <caret line="4021" column="12" selection-start-line="4021" selection-start-column="12" selection-end-line="4021" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/column_settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="67" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/matchstats_page_files/matchstats_common_data_page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/popper.js/dist/popper-utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16646">
+          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -723,22 +752,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/datatables.net/js/jquery.dataTables.js">
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="4021" column="12" selection-start-line="4021" selection-start-column="12" selection-end-line="4021" selection-end-column="12" />
+        <state relative-caret-position="271">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/matchstats_page_files/matchstats_common_data_page.js">
+    <entry file="file://$PROJECT_DIR$/public/js/all.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="508" column="22" selection-start-line="508" selection-start-column="22" selection-end-line="508" selection-end-column="22" />
+        <state relative-caret-position="15765">
+          <caret line="3664" column="25" selection-start-line="3664" selection-start-column="25" selection-end-line="3664" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/popper.in.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/js/popper.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/jquery/dist/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
         </state>
       </provider>
     </entry>

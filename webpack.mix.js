@@ -22,9 +22,9 @@ mix.styles([
 ], 'public/css/all.css');
 
 mix.babel([
+    'node_modules/jquery/dist/jquery.js',
+    'node_modules/popper.js/dist/umd/popper.js',
     'node_modules/noty/lib/noty.js',
-    'node_modules/popper.js/popper.js',
-    'node_modules/popper.js/popper-utils.js',
     'node_modules/tippy.js/umd/index.all.js',
     'node_modules/datatables.net/js/jquery.dataTables.js',
 

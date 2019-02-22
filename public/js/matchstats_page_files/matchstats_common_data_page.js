@@ -78,10 +78,12 @@ $(document).ready(function () {
                 },
                 "columns": columns,
                 "initComplete": function () {
-                    var api = this.api();
                     // api.$('td').click(function () {
                     //     api.search(this.innerHTML).draw();
                     // });
+                },
+                "preDrawCallback": function () {
+                    $('.obtainer_btn').attr('disabled', 'disabled');
                 }
             }
         );
@@ -92,15 +94,17 @@ $(document).ready(function () {
 
             var that = this;
 
-            $('input', this.footer()).on('propertychange change click keyup input paste', function () {
+            $('input', this.footer()).on('propertychange filter change click keyup input paste', function (i,e) {
 
-                if (that.search() !== "") {
-                    console.log(i);
-
-                    // that.columns([22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40]).search(this.value).draw();
+                if(i.type == 'filter' && that.search() !== ""){
                     that
                         .search(this.value);
+                }else if(that.search() !== this.value){
+
+                    that
+                        .search(this.value).draw();
                 }
+
             });
         });
 
@@ -493,9 +497,7 @@ $(document).ready(function () {
         $('.obtainer_btn').on('click', function () {
 
             let column = $($(this).parent()[0]).attr('column_type');
-            let selected_row = ($('tr.selected')[0]);
             $('tfoot>tr> th>input').val('');
-
             for (let el in settings) {
                 let column_settings = settings[el];
                 if (column_settings.skip_filter == true && el != column) {
@@ -507,8 +509,8 @@ $(document).ready(function () {
             }
 
             datatable.draw();
+            $($('tfoot>tr> th>input')).trigger('filter');
 
-            $($('tfoot>tr> th>input')).trigger('change')
             // load_columns_data({'skip_filter_column': '123'});
             // datatable.ajax.reload();
         })

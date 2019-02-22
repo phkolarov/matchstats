@@ -1,6 +1,7 @@
 let settings = {
     away_team: {column_color: "", cell_color: "", width: ""},
     away_team_draw_no_bet: {column_color: "", cell_color: "", width: "", skip_filter: true},
+    neutral_stadium: {column_color: "", cell_color: "", width: ""},
     away_team_over_0_5_goals: {column_color: "", cell_color: "", width: "", skip_filter: true},
     away_team_over_1_5_goals: {column_color: "", cell_color: "", width: "", skip_filter: true},
     away_team_over_2_5_goals: {column_color: "", cell_color: "", width: "", skip_filter: true},
@@ -31,7 +32,6 @@ let settings = {
     home_team_to_win: {column_color: "", cell_color: "", width: "", skip_filter: true},
     home_team_win_or_draw: {column_color: "", cell_color: "", width: "", skip_filter: true},
     id: {column_color: "", cell_color: "", width: ""},
-    neutral_stadium: {column_color: "", cell_color: "", width: "", skip_filter: true},
     play_offs: {column_color: "", cell_color: "", width: ""},
     season: {column_color: "", cell_color: "", width: ""},
     stage: {column_color: "", cell_color: "", width: ""},

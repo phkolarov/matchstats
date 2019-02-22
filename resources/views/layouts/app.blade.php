@@ -20,13 +20,17 @@
     <link href="{{ asset('public/css/common.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+{{--    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>--}}
+    <script src="{{asset('public/js/all.js')}}"></script>
+
+    <script>
+        console.log($)
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.18/datatables.min.js"></script>
     <script src="{{ asset('public/libs/simple_pagination/jquery.simplePagination.js')}}" defer></script>
     <script src="{{ asset('public/libs/date-time-picker/jquery.datetimepicker.full.min.js')}}" defer></script>
     <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script src="{{asset('public/js/all.js')}}"></script>
     <script src="{{asset('public/js/column_settings.js')}}"></script>
     <script src="{{ asset('public/js/match_stats_app.js') }}" defer></script>
     <script src="{{ asset('public/js/data_service.js') }}" defer></script>
