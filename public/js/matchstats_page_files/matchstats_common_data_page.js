@@ -7,7 +7,6 @@ $(document).ready(function () {
     sessionStorage.country = $(this).val();
     sessionStorage.division = $(this).val();
 
-
     function data_table_rendering(columns_array) {
 
         let columns = [];
@@ -84,6 +83,11 @@ $(document).ready(function () {
                 },
                 "preDrawCallback": function () {
                     $('.obtainer_btn').attr('disabled', 'disabled');
+                    $('.filter_obtainer_btn').attr('disabled', 'disabled');
+                    $('input[placeholder="DATE"]').datetimepicker({
+                        timepicker: false,
+                        format: 'Y-m-d'
+                    })
                 }
             }
         );
@@ -94,15 +98,18 @@ $(document).ready(function () {
 
             var that = this;
 
-            $('input', this.footer()).on('propertychange filter change click keyup input paste', function (i,e) {
+            $('input', this.footer()).on('propertychange filter clear change click keyup input paste', function (i,e) {
 
-                if(i.type == 'filter' && that.search() !== ""){
+                if(i.type == 'filter' && this.value !== ""){
                     that
                         .search(this.value);
-                }else if(that.search() !== this.value){
+                }else if(that.search() !== this.value && i.type != 'filter' && i.type != 'clear'){
 
                     that
                         .search(this.value).draw();
+                }else if(i.type == 'clear' && this.value == ""){
+                    that
+                        .search(this.value);
                 }
 
             });
@@ -135,7 +142,6 @@ $(document).ready(function () {
 
                     let width = 30;
                     let picker_type = '';
-                    console.log(column_name);
                     if (column_name == 'date') {
                         picker_type = 'picker-type="date"';
                         width = 60;
@@ -161,7 +167,7 @@ $(document).ready(function () {
 
             $('[picker-type="date"]').datetimepicker({
                 timepicker: false,
-                format: 'Y-m-d H:i'
+                format: 'Y-m-d'
             });
 
             $('[picker-type="time"]').datetimepicker({
@@ -385,8 +391,6 @@ $(document).ready(function () {
             let columns = $(`[row-id="${id}"]`).children();
             let data = {};
             columns.each(function (i, e) {
-
-                console.log(e);
                 let column_name = $(this).attr('type').trim();
                 let column_value = $($(this).children()[0]).val();
                 if (column_name != 'id') {
@@ -436,9 +440,14 @@ $(document).ready(function () {
             if ($('tr.selected').length == 1) {
                 $('#obtainSimilarMatchesBtn').removeAttr('disabled');
                 $('.obtainer_btn').removeAttr('disabled');
+                $('.filter_obtainer_btn').removeAttr('disabled');
+
+
             } else {
                 $('#obtainSimilarMatchesBtn').attr('disabled', 'disabled');
                 $('.obtainer_btn').attr('disabled', 'disabled');
+                $('.filter_obtainer_btn').attr('disabled', 'disabled');
+
             }
         });
 
@@ -485,43 +494,92 @@ $(document).ready(function () {
             input.trigger('change');
             match_app.message('Obtained', 'success');
         })
-
-        $('#clearFilters').on('click', function () {
-            $('th input').val('')
-            $('th input').trigger('change')
-        })
     }
 
-    function filters(datatable) {
+    function obtainers(datatable) {
 
         $('.obtainer_btn').on('click', function () {
 
             let column = $($(this).parent()[0]).attr('column_type');
             $('tfoot>tr> th>input').val('');
-            for (let el in settings) {
-                let column_settings = settings[el];
+            for (let el in settings.columns) {
+                let column_settings = settings.columns[el];
                 if (column_settings.skip_filter == true && el != column) {
                     let filter_value = $('tr.selected' + ` [type="${el}"]`).text().trim()
                     $(`[column_type="${el}"] input`).val(filter_value);
-                } else if (column_settings.skip_filter == true && el == column) {
-                    console.log(el)
                 }
+                // else if (column_settings.skip_filter == true && el == column) {
+                //     console.log(el)
+                // }
             }
-
-            datatable.draw();
+            $('#data thead th' ).removeAttr('style');
             $($('tfoot>tr> th>input')).trigger('filter');
+            datatable.draw();
+
 
             // load_columns_data({'skip_filter_column': '123'});
             // datatable.ajax.reload();
         })
     }
 
+    function filters(){
+
+        tippy('.filter_obtainer_btn',{arrow: true,});
+
+        let filters = settings.filters;
+
+        $('.filter_obtainer_btn').on('click',function () {
+
+            let filter_num = parseInt($(this).attr('filter-num')) - 1;
+            let current_filter_indexes = filters[filter_num];
+            $('#data thead th' ).removeAttr('style');
+            $('.filters_column').each(function (i,e) {
+                if(current_filter_indexes.includes(i + 1)){
+                    let filter_name = $(this).attr('column_type');
+                    let filter_value = $(`#data tbody .selected td.${filter_name}`).text();
+                    $(`.${filter_name}>input`).val(filter_value);
+                    $(`th[column_type="${filter_name}"]`).css({color: 'red'});
+
+                }
+            });
+
+            $($('tfoot>tr> th>input')).trigger('filter');
+            datatable.draw();
+            // $($('tfoot>tr> th>input')[0]).trigger('filter');
+        })
+
+
+    }
 
     load_columns_data().then(function (data) {
         datatable = data_table_rendering(data.success);
-        filters(datatable);
+        obtainers(datatable);
     });
 
+    function clear_inputs() {
+        $('#clear_filters').on('click', function () {
+            $('th input').val('')
+            $($('tfoot>tr> th>input')).trigger('clear');
+            datatable.draw();
+            $('#data thead th' ).removeAttr('style');
+        })
+    }
+
+
+    function colorize() {
+
+
+        let col1;
+        let col2;
+
+        if(col1 > col2){
+
+        }
+
+    }
+
+    clear_inputs();
+    filters();
     obtain_similar_data();
     upload_file();
     show_hide_columns();

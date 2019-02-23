@@ -19,7 +19,7 @@
                 <button class="btn btn-success btn-xs" data-toggle="modal" id="obtainSimilarMatchesBtn"
                         data-target="#obtainSimilarMatchesModal" disabled="disabled">Obtain similar matches
                 </button>
-                <button class="btn btn-danger btn-xs" data-toggle="modal" id="clearFilters">Clear filters
+                <button class="btn btn-danger btn-xs" data-toggle="modal" id="clear_filters">Clear filters
                 </button>
             </div>
         </div>
@@ -30,24 +30,24 @@
                         <div class="">
                             <label class=""><span class="filter_title">Custom filter obtainers</span></label>
                             <div class="mb-3">
-                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 1</button>
-                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 2</button>
-                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 3</button>
-                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 4</button>
-                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 5</button>
-                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 6</button>
-                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 7</button>
-                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 8</button>
-                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 9</button>
-                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 10</button>
-                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 11</button>
-                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 12</button>
-                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 13</button>
-                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 14</button>
-                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 15</button>
-                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 16</button>
-                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 17</button>
-                                <button class="btn btn-info obtainer_btn" data-toggle="modal" disabled="disabled">Filter 18</button>
+                                <button class="btn btn-info btn-xs filter_obtainer_btn" filter-num="1" data-tippy-content="Columns from  22 to 29, 31, 32, 34, 35, 37 to 40" disabled="disabled">Filter 1</button>
+                                <button class="btn btn-info btn-xs filter_obtainer_btn" filter-num="2" data-tippy-content="Columns from  22 to 30, 32, 33, 35, 37 to 40" disabled="disabled">Filter 2</button>
+                                <button class="btn btn-info btn-xs filter_obtainer_btn" filter-num="3" data-tippy-content="Columns from  22 to 31, 33, 34, 37 to 40" disabled="disabled">Filter 3</button>
+                                <button class="btn btn-info btn-xs filter_obtainer_btn" filter-num="4" data-tippy-content="Columns from  22, 24, 30 to 35, 38 to 40" disabled="disabled">Filter 4</button>
+                                <button class="btn btn-info btn-xs filter_obtainer_btn" filter-num="5" data-tippy-content="Columns from  22, 24, 30 to 35, 37, 39, 40" disabled="disabled">Filter 5</button>
+                                <button class="btn btn-info btn-xs filter_obtainer_btn" filter-num="6" data-tippy-content="Columns from  22, 24, 30 to 35, 37, 38, 40" disabled="disabled">Filter 6</button>
+                                <button class="btn btn-info btn-xs filter_obtainer_btn" filter-num="7" data-tippy-content="Columns from  22, 24, 30 to 35, 37 to 39" disabled="disabled">Filter 7</button>
+                                <button class="btn btn-info btn-xs filter_obtainer_btn" filter-num="8" data-tippy-content="Columns from  28 to 40" disabled="disabled">Filter 8</button>
+                                <button class="btn btn-info btn-xs filter_obtainer_btn" filter-num="9" data-tippy-content="Columns from  28 to 36, 38 to 40" disabled="disabled">Filter 9</button>
+                                <button class="btn btn-info btn-xs filter_obtainer_btn" filter-num="10" data-tippy-content="Columns from  28 to 37, 39, 40" disabled="disabled">Filter 10</button>
+                                <button class="btn btn-info btn-xs filter_obtainer_btn" filter-num="11" data-tippy-content="Columns from  28 to 38, 40" disabled="disabled">Filter 11</button>
+                                <button class="btn btn-info btn-xs filter_obtainer_btn" filter-num="12" data-tippy-content="Columns from  28 to 39" disabled="disabled">Filter 12</button>
+                                <button class="btn btn-info btn-xs filter_obtainer_btn" filter-num="13" data-tippy-content="Columns from  30 to 36" disabled="disabled">Filter 13</button>
+                                <button class="btn btn-info btn-xs filter_obtainer_btn" filter-num="14" data-tippy-content="Columns from  22, 28 to 32 и 40" disabled="disabled">Filter 14</button>
+                                <button class="btn btn-info btn-xs filter_obtainer_btn" filter-num="15" data-tippy-content="Columns from  24, 28, 29, 33 to 35 и 40" disabled="disabled">Filter 15</button>
+                                <button class="btn btn-info btn-xs filter_obtainer_btn" filter-num="16" data-tippy-content="Columns from  22 to 27" disabled="disabled">Filter 16</button>
+                                <button class="btn btn-info btn-xs filter_obtainer_btn" filter-num="17" data-tippy-content="Columns from  25 to 29" disabled="disabled">Filter 17</button>
+                                <button class="btn btn-info btn-xs filter_obtainer_btn" filter-num="18" data-tippy-content="Columns from  36 to 40" disabled="disabled">Filter 18</button>
 
 
                             </div>
@@ -58,7 +58,7 @@
                             <thead class="thead-dark">
                             <tr class="">
                                 <th class="obtain_column_buttons" column_type="id" scope="col">
-                                    <button class="btn btn-info obtainer_btn"  data-toggle="modal" >All</button>
+                                    <button class="btn btn-info obtainer_btn"   >All</button>
                                 </th>
                                 <th class="obtain_column_buttons" column_type="date" scope="col">
                                 </th>
@@ -102,62 +102,62 @@
                                 </th>
                                 <th class="obtain_column_buttons" column_type="neutral_stadium" scope="col">
                                 </th>
-                                <th class="obtain_column_buttons" column_type="home_team_to_win" scope="col">
-                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                <th class="obtain_column_buttons filters_column" filter-num="1" column_type="home_team_to_win" scope="col">
+                                    <button class="btn btn-info obtainer_btn"   disabled="disabled">S</button>
                                 </th>
-                                <th class="obtain_column_buttons" column_type="draw" scope="col">
-                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                <th class="obtain_column_buttons filters_column" column_type="draw" scope="col">
+                                    <button class="btn btn-info obtainer_btn" disabled="disabled">S</button>
                                 </th>
-                                <th class="obtain_column_buttons" column_type="away_team_to_win" scope="col">
-                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                <th class="obtain_column_buttons filters_column" column_type="away_team_to_win" scope="col">
+                                    <button class="btn btn-info obtainer_btn" disabled="disabled">S</button>
                                 </th>
-                                <th class="obtain_column_buttons" column_type="home_team_win_or_draw" scope="col">
-                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                <th class="obtain_column_buttons filters_column" column_type="home_team_win_or_draw" scope="col">
+                                    <button class="btn btn-info obtainer_btn"   disabled="disabled">S</button>
                                 </th>
-                                <th class="obtain_column_buttons" column_type="away_team_win_or_draw" scope="col">
-                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                <th class="obtain_column_buttons filters_column" column_type="away_team_win_or_draw" scope="col">
+                                    <button class="btn btn-info obtainer_btn" disabled="disabled">S</button>
                                 </th>
-                                <th class="obtain_column_buttons" column_type="home_team_or_away_team_win" scope="col">
-                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                <th class="obtain_column_buttons filters_column" column_type="home_team_or_away_team_win" scope="col">
+                                    <button class="btn btn-info obtainer_btn"  disabled="disabled">S</button>
                                 </th>
-                                <th class="obtain_column_buttons" column_type="home_team_draw_no_bet" scope="col">
-                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                <th class="obtain_column_buttons filters_column" column_type="home_team_draw_no_bet" scope="col">
+                                    <button class="btn btn-info obtainer_btn"  disabled="disabled">S</button>
                                 </th>
-                                <th class="obtain_column_buttons" column_type="away_team_draw_no_bet" scope="col">
-                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                <th class="obtain_column_buttons filters_column" column_type="away_team_draw_no_bet" scope="col">
+                                    <button class="btn btn-info obtainer_btn"  disabled="disabled">S</button>
                                 </th>
-                                <th class="obtain_column_buttons" column_type="home_team_over_0_5_goals" scope="col">
-                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                <th class="obtain_column_buttons filters_column" column_type="home_team_over_0_5_goals" scope="col">
+                                    <button class="btn btn-info obtainer_btn"  disabled="disabled">S</button>
                                 </th>
-                                <th class="obtain_column_buttons" column_type="home_team_over_1_5_goals" scope="col">
-                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                <th class="obtain_column_buttons filters_column" column_type="home_team_over_1_5_goals" scope="col">
+                                    <button class="btn btn-info obtainer_btn"  disabled="disabled">S</button>
                                 </th>
-                                <th class="obtain_column_buttons" column_type="home_team_over_2_5_goals" scope="col">
-                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                <th class="obtain_column_buttons filters_column" column_type="home_team_over_2_5_goals" scope="col">
+                                    <button class="btn btn-info obtainer_btn"  disabled="disabled">S</button>
                                 </th>
-                                <th class="obtain_column_buttons" column_type="away_team_over_0_5_goals" scope="col">
-                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                <th class="obtain_column_buttons filters_column" column_type="away_team_over_0_5_goals" scope="col">
+                                    <button class="btn btn-info obtainer_btn"  disabled="disabled">S</button>
                                 </th>
-                                <th class="obtain_column_buttons" column_type="away_team_over_1_5_goals" scope="col">
-                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                <th class="obtain_column_buttons filters_column" column_type="away_team_over_1_5_goals" scope="col">
+                                    <button class="btn btn-info obtainer_btn"  disabled="disabled">S</button>
                                 </th>
-                                <th class="obtain_column_buttons" column_type="away_team_over_2_5_goals" scope="col">
-                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                <th class="obtain_column_buttons filters_column" column_type="away_team_over_2_5_goals" scope="col">
+                                    <button class="btn btn-info obtainer_btn"  disabled="disabled">S</button>
                                 </th>
-                                <th class="obtain_column_buttons" column_type="both_teams_to_score" scope="col">
-                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                <th class="obtain_column_buttons filters_column" column_type="both_teams_to_score" scope="col">
+                                    <button class="btn btn-info obtainer_btn"  disabled="disabled">S</button>
                                 </th>
-                                <th class="obtain_column_buttons" column_type="total_goals_over_0_5" scope="col">
-                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                <th class="obtain_column_buttons filters_column" column_type="total_goals_over_0_5" scope="col">
+                                    <button class="btn btn-info obtainer_btn"  disabled="disabled">S</button>
                                 </th>
-                                <th class="obtain_column_buttons" column_type="total_goals_over_1_5" scope="col">
-                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                <th class="obtain_column_buttons filters_column" column_type="total_goals_over_1_5" scope="col">
+                                    <button class="btn btn-info obtainer_btn"  disabled="disabled">S</button>
                                 </th>
-                                <th class="obtain_column_buttons" column_type="total_goals_over_2_5" scope="col">
-                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                <th class="obtain_column_buttons filters_column" column_type="total_goals_over_2_5" scope="col">
+                                    <button class="btn btn-info obtainer_btn"  disabled="disabled">S</button>
                                 </th>
-                                <th class="obtain_column_buttons" column_type="total_goals_over_3_5" scope="col">
-                                    <button class="btn btn-info obtainer_btn" data-toggle="modal"  disabled="disabled">S</button>
+                                <th class="obtain_column_buttons filters_column" column_type="total_goals_over_3_5" scope="col">
+                                    <button class="btn btn-info obtainer_btn"  disabled="disabled">S</button>
                                 </th>
                             </tr>
                             <tr class="">
