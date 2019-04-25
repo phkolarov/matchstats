@@ -19,6 +19,7 @@ mix.styles([
     'node_modules/noty/lib/themes/bootstrap-v4.css',
     'node_modules/noty/lib/themes/mint.css',
     'node_modules/datatables.net-dt/css/jquery.dataTables.css',
+    'public/css/datatable-dt.css',
 ], 'public/css/all.css');
 
 mix.babel([

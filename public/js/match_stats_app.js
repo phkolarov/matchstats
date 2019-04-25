@@ -14,8 +14,6 @@ match_app = function () {
             layout: "bottomRight",
             theme: "bootstrap-v4"
         }).show();
-
-
     }
 
     function request(url, method, headers, data, success, error) {

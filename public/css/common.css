@@ -1,70 +1,403 @@
-body{
-    background-color: #62B849;
+@font-face {
+    font-family: "Segoe UI Semibold";
+    src: local("../css/seguisb.ttf")
+}
 
+
+body {
+    background-color: #62B849;
     background-image: url("../images/5YvTk0.jpg");
 }
 
-th{
-    font-size: 10px;
+th {
+    font-size: 10.5px;
 }
 
-table{
-    font-size: 11px;
+table {
+    font-size: 10.5px;
     text-align: center;
+    /*font-weight: bold;*/
 
 }
-thead>tr>th{
-    padding-right: 15px !important;
-    font-weight: bold;
+
+#data>.table_columns{
+    border-bottom: 1px solid black;
 }
 
-table.dataTable.compact thead th, table.dataTable.compact thead td{
+.dataTables_scroll thead > tr > th {
+    padding-right: 0px !important;
+    text-align: center;
+}
+
+table.dataTable.compact thead th {
     padding: 2px;
     text-align: center;
 
 }
-.obtain_column_buttons{
-    padding: 2px !important;
+
+table.dataTable.compact tbody td {
+    padding: 2px 0px !important;
+    text-align: center;
 }
-.btn-group-xs > .btn,  .obtainer_btn{
-    padding: .40rem 0.2rem;
+table.dataTable thead>tr>th.sorting_asc, table.dataTable thead>tr>th.sorting_desc, table.dataTable thead>tr>th.sorting, table.dataTable thead>tr>td.sorting_asc, table.dataTable thead>tr>td.sorting_desc, table.dataTable thead>tr>td.sorting{
+    padding: 2px 0px;
+}
+.dataTables_scroll .obtain_column_buttons {
+    padding: 2px ;
+}
+
+.btn-group-xs > .btn, .btn-xxs {
+    padding: .40rem 0.4rem;
     font-size: .75rem;
     line-height: .4;
     border-radius: .2rem;
     font-weight: bold;
 }
+
 .btn-group-xs > .btn, .btn-xs {
-    padding  : .40rem .6rem;
-    font-size  : .875rem;
-    line-height  : .5;
-    border-radius : .2rem;
+    padding: .40rem .6rem;
+    font-size: .875rem;
+    line-height: .5;
+    border-radius: .2rem;
 }
 
-.filter_title{
+.filter_title {
     font-style: italic;
     font-size: 14px;
 }
 
-.card-header{
+.table-wrapper {
     overflow: auto;
+    min-height: 625px;
+    max-height: 625px;
 }
 
-.add-row-buttons
-{
-    font-size: 10px;
+.card-header{
+    padding: 0.45rem 1.25rem;
+    margin-bottom: 0;
+     background-color: transparent;
+     border-bottom: 0px solid rgba(0,0,0,.125);
+}
+
+.id > button.add-row-buttons {
+    vertical-align: middle;
+    margin: 0;
+}
+
+.add-row-buttons {
+    font-size: 12px;
     font-weight: bold;
     display: inline-block;
-    padding: .33rem;
-}
-.add-row-buttons:nth-child(1){
-    margin-bottom: 5px;
+    padding: .13rem;
 }
 
-.add-row-buttons:nth-child(2){
-    margin-top: 5px;
+.add-row-buttons:nth-child(1) {
+    /*margin-bottom: 5px;*/
+}
+
+.add-row-buttons:nth-child(3) {
+    /*margin-top: 5px;*/
+}
+
+#data {
+    position: relative;
+    display: table;
+    /*min-height: 419px;*/
+    /*overflow: auto;*/
+    /*min-height: 320px;*/
+    font-family: "Segoe UI Semibold";
+    z-index: 10;
+}
+
+
+#data input {
+    height: 16px;
+    font-size: 11px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+}
+#data tfoot{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+#data tfoot th{
+}
+#data tbody td {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.load_team_data {
+    font-size: 12px;
+}
+
+.filter_obtainer_btn {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.filter_obtainer_btn .fa-filter {
+    font-size: 9px;
+}
+
+table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.even {
+    /*background-color: #f9f9f9;*/
+}
+
+#data thead tr:nth-child(3) > [column_type="home_team_win_or_draw"], tr:nth-child(3) > [column_type="away_team_win_or_draw"], tr:nth-child(3) > [column_type="home_team_or_away_team_win"] {
+    background-color: #e3e3e3;
+}
+
+#data thead tr:nth-child(3) > [column_type="home_team_draw_no_bet"] {
+    background-color: #e2efda;
+}
+
+#data thead tr:nth-child(3) > [column_type="away_team_draw_no_bet"] {
+    background-color: #ff99cc;
+}
+
+#data thead tr:nth-child(3) > [column_type="home_team_over_0_5_goals"], tr:nth-child(3) > [column_type="home_team_over_1_5_goals"], tr:nth-child(3) > [column_type="home_team_over_2_5_goals"] {
+    background-color: #e2efda;
+}
+
+#data thead tr:nth-child(3) > [column_type="away_team_over_0_5_goals"], tr:nth-child(3) > [column_type="away_team_over_1_5_goals"], tr:nth-child(3) > [column_type="away_team_over_2_5_goals"] {
+
+    background-color: #ff99cc;
+}
+
+#data thead tr:nth-child(3) > [column_type="both_teams_to_score"], tr:nth-child(3) > [column_type="total_goals_over_0_5"], tr:nth-child(3) > [column_type="total_goals_over_1_5"], tr:nth-child(3) > [column_type="total_goals_over_2_5"], tr:nth-child(3) > [column_type="total_goals_over_3_5"] {
+    background-color: #72d9df;
+}
+
+
+#data tfoot tr > [column_type_f="home_team_win_or_draw"] input, tr > [column_type_f="away_team_win_or_draw"] input, tr > [column_type_f="home_team_or_away_team_win"] input {
+    background-color: #e3e3e3;
+}
+
+#data tfoot tr > [column_type_f="home_team_draw_no_bet"] input {
+    background-color: #e2efda;
+}
+
+#data tfoot tr > [column_type_f="away_team_draw_no_bet"] input {
+    background-color: #ff99cc;
+}
+
+#data tfoot tr > [column_type_f="home_team_over_0_5_goals"] input, tr > [column_type_f="home_team_over_1_5_goals"] input, tr > [column_type_f="home_team_over_2_5_goals"] input {
+    background-color: #e2efda;
+}
+
+#data tfoot tr > [column_type_f="away_team_over_0_5_goals"] input, tr > [column_type_f="away_team_over_1_5_goals"] input, tr > [column_type_f="away_team_over_2_5_goals"] input {
+
+    background-color: #ff99cc;
+}
+
+#data tfoot tr > [column_type_f="both_teams_to_score"] input, tr > [column_type_f="total_goals_over_0_5"] input, tr > [column_type_f="total_goals_over_1_5"] input, tr > [column_type_f="total_goals_over_2_5"] input, tr > [column_type_f="total_goals_over_3_5"] input {
+    background-color: #72d9df;
+}
+#data thead tr:nth-child(3) > [column_type="home_team_percent_over_2_5_goals"]{
+    background-color: #72d9df;
+}
+#data thead tr:nth-child(3) > [column_type="away_team_percent_over_2_5_goals"]{
+    background-color: #72d9df;
+}
+
+#data thead tr:nth-child(3) > [column_type="home_team_percent_home_success_rate"]{
+    background-color: #e2efda;
+}
+
+#data thead tr:nth-child(3) > [column_type="away_team_percent_away_success_rate"]{
+    background-color: #ff99cc;
+}
+
+#data thead tr:nth-child(3) > [column_type="home_team_percent_total_success_rate"]{
+    background-color: #bfbfbf;
+}
+
+#data thead tr:nth-child(3) > [column_type="away_team_percent_total_success_rate"]{
+    background-color: #bfbfbf;
+}
+
+div.dataTables_wrapper div.dataTables_info{
+    padding-top: 0.5em;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+    padding: 0.1em 1em;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:active,.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+    padding: 0.1em 1em;
+}
+
+.dataTables_wrapper{
+    position: unset;
+    padding-bottom: 40px;
+}
+
+table.dataTable.compact tfoot th{
+    padding: 2px 0;
+}
+
+.dataTables_paginate.paging_simple_numbers {
+    font-size:  14px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    z-index: 0;
+}
+div.dataTables_wrapper div.dataTables_paginate{
+    margin-right: 20px;
+
+}
+.dataTables_info{
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+    bottom: 10px;
+    z-index: 0;
+
+}
+/*.dataTables_scrollBody thead tr:nth-child(1),.dataTables_scrollBody thead tr:nth-child(2),.dataTables_scrollBody thead tr:nth-child(3){*/
+/*    !*display: none;*!*/
+/*    padding: 0 !important;*/
+/*}*/
+/*.dataTables_scrollBody .thead-dark .obtain_column_buttons {*/
+/*    padding: 0px;*/
+/*}*/
+
+table.dataTable thead th, table.dataTable thead td {
+    padding: 10px 18px;
+    border-bottom: 1px solid #c5c5c5;
+    font-weight: normal;
+}
+.table-bordered td, .table-bordered th{
+    /*color: grey;*/
+}
+table.dataTable thead>tr>th.sorting{
+    padding: 2px 0;
+}
+
+.table-bordered td, .table-bordered th{
+    background-color: transparent;
+}
+
+.sorting_1,.sorting_2,.sorting_3{
+    /*background-color: transparent !important;*/
+}
+
+table.dataTable.display tbody tr.odd > .sorting_1, table.dataTable.order-column.stripe tbody tr.odd > .sorting_1,
+table.dataTable.display tbody tr.odd > .sorting_2, table.dataTable.order-column.stripe tbody tr.odd > .sorting_2,
+table.dataTable.display tbody tr.odd > .sorting_3, table.dataTable.order-column.stripe tbody tr.odd > .sorting_3{
+    background-color: transparent;
+}
+table.dataTable.display tbody tr.odd > .sorting_3, table.dataTable.order-column.stripe tbody tr.odd > .sorting_3,
+table.dataTable.display tbody tr.even > .sorting_2, table.dataTable.order-column.stripe tbody tr.even > .sorting_2,
+table.dataTable.display tbody tr.even > .sorting_1, table.dataTable.order-column.stripe tbody tr.even > .sorting_1
+{
+    background-color: transparent;
+}
+
+table.dataTable.hover tbody tr:hover.selected, table.dataTable.display tbody tr:hover.selected{
+    background-color: #e1e1e1;
+}
+tfoot::before
+{
+    content: '';
+    display: block;
+    height: 15px;
+}
+
+
+table.dataTable thead:last-child th, table.dataTable thead:last-child td{
+    border-bottom: 1px solid black;
+}
+.thead-dark{
+    border-bottom: 1px solid black;
+}
+#data thead .table_columns th{
+    border-top: 1px solid black ;
+    border-bottom: 1px solid black ;
+    border-left: 1px solid black  ;
+}
+#data thead .table_columns th:last-child{
+    border-right: 1px solid black  ;
+}
+#data thead .table_columns>th{
+    /*border: 1px solid #dddddd;*/
+    border-top: 1px solid black ;
+    border-bottom: 1px solid black ;
+    border-left: 1px solid black  ;
+}
+
+#data>tfoot input:focus{
+    /*background-color: blue !important;*/
+}
+table.dataTable tbody tr.selected{
+    background-color: transparent;
+
+}
+table.dataTable.stripe tbody tr.odd.selected, table.dataTable.display tbody tr.odd.selected{
+    background-color: transparent;
+}
+#data_filter{
+    display: none;
+}
+#data thead-dark{
+    border: none;
 }
 #data{
-    display: block;
-    max-height: 600px;
-    overflow: auto;
+    border: none;
+}
+#filters2{
+    height: 30px;
+    vertical-align: top;
+}
+#data tbody{
+    border: 1px solid #dee2e6;
+}
+#data thead tr:nth-child(1) th,#data thead tr:nth-child(2) th{
+    border: none;
+}
+table.dataTable.display tbody tr.odd.selected > .sorting_1, table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_1{
+     background-color: red;
+ }
+
+table.dataTable.display tbody tr:hover.selected > .sorting_1, table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_1{
+    background-color: red;
+}
+
+table.dataTable.display tbody tr.even.selected > .sorting_1, table.dataTable.order-column.stripe tbody tr.even.selected > .sorting_1{
+    background-color: red;
+}
+table.dataTable.hover tbody tr:hover.selected, table.dataTable.display tbody tr:hover.selected{
+    background-color: transparent;
+}
+
+table.dataTable.display tbody tr.odd.selected > .sorting_2, table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_2{
+    background-color: red;
+}
+
+table.dataTable.display tbody tr:hover.selected > .sorting_2, table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_2{
+    background-color: red;
+}
+
+table.dataTable.display tbody tr.even.selected > .sorting_2, table.dataTable.order-column.stripe tbody tr.even.selected > .sorting_2{
+    background-color: red;
+}
+
+table.dataTable.display tbody tr.odd.selected > .sorting_2, table.dataTable.order-column.stripe tbody tr.odd.selected > .sorting_3{
+    background-color: red;
+}
+
+table.dataTable.display tbody tr:hover.selected > .sorting_2, table.dataTable.order-column.hover tbody tr:hover.selected > .sorting_3{
+    background-color: red;
+}
+
+table.dataTable.display tbody tr.even.selected > .sorting_2, table.dataTable.order-column.stripe tbody tr.even.selected > .sorting_3{
+    background-color: red;
+}
+table.dataTable.hover tbody tr:hover.selected, table.dataTable.display tbody tr:hover.selected{
+    background-color: transparent;
 }

@@ -21,26 +21,33 @@ class SystemController extends Controller
         $lines = explode("\n", $file_data);
         $array = array_map('str_getcsv', $lines);
         $f = fopen('../testt.csv', 'w+');
-        foreach ($array as $row) {
+        echo '<pre>';
 
-            $row[0] = date('Y-m-d', strtotime(str_replace('/', '-', $row[0])));
+//        var_dump(date('Y-m-d',(strtotime('13.10.2018'))));
+        //var_dump(date('Y-m-d', strtotime(str_replace('.','-','13.10.2018'))));
 
+        foreach ($array as $key => $row) {
 
-            $str = '"' . implode('","', $row) . '"' . "\n";
-            $str = str_replace('""', '"0"', $str);
-            fwrite($f, $str);
+            if (count($row) == 40 && $key > 2 && $row[11] != "" && $row[16] != "") {
+                $date_str = (str_replace('/', '-', $row[0]));
+                $date_str = (str_replace('.', '-', $date_str));
+                $row[0] = date('Y-m-d', strtotime($date_str));
+                $row[1] = date('H:i:s', strtotime($row[1]));
+
+                $str = '"' . implode('","', $row) . '"' . "\n";
+                $str = str_replace('""', 'NULL', $str);
+                fwrite($f, $str);
+            }
         }
         fclose($f);
         $file_path = addslashes(realpath('../testt.csv'));
-
         $pdo = DB::connection()->getPdo();
-
         $stmt = $pdo->prepare("LOAD DATA LOCAL INFILE '$file_path'
         INTO TABLE data
 FIELDS TERMINATED BY ','
 ENCLOSED BY '\"'
 LINES TERMINATED BY '\n'
-IGNORE 3 LINES
+
 ( date, time, country, division, stage, play_offs, eliminations, season, home_team_percent_over_2_5_goals, home_team_percent_home_success_rate, home_team_percent_total_success_rate, home_team, half_time_result_h, half_time_result_t, full_time_result_f, full_time_result_t, away_team, away_team_percent_total_success_rate, away_team_percent_away_success_rate, away_team_percent_over_2_5_goals, neutral_stadium, home_team_to_win, draw, away_team_to_win, home_team_win_or_draw, away_team_win_or_draw, home_team_or_away_team_win, home_team_draw_no_bet, away_team_draw_no_bet, home_team_over_0_5_goals, home_team_over_1_5_goals, home_team_over_2_5_goals, away_team_over_0_5_goals, away_team_over_1_5_goals, away_team_over_2_5_goals, both_teams_to_score, total_goals_over_0_5, total_goals_over_1_5, total_goals_over_2_5, total_goals_over_3_5)
 SET id = NULL;
    ");
@@ -84,11 +91,17 @@ SET id = NULL;
             if (in_array($key, $columns)) {
 
                 if ($parameter == "") {
-                    $parameter = 0;
+                    $parameter = null;
+                }
+
+                if($key == 'date'){
+                    $parameter = date('Y-m-d',strtotime($parameter));
+                }
+                if($key == 'time'){
+                    $parameter .= ":00";
                 }
                 $insertion_parameters[$key] = $parameter;
             }
-
         }
 
 //        echo '<pre>';
@@ -110,7 +123,7 @@ SET id = NULL;
         $parameters = $request->json()->all();
         $db_column_data = DB::select("SHOW COLUMNS FROM data");
         $columns_data = [];
-        $columns = collect($db_column_data)->map(function ($i,$e) use (&$columns_data){
+        $columns = collect($db_column_data)->map(function ($i, $e) use (&$columns_data) {
             $columns_data[$i->Field] = $i->Type;
         });
 //        array_shift($columns);
@@ -122,26 +135,29 @@ SET id = NULL;
             if (in_array($key, array_keys($columns_data))) {
 
                 if ($parameter == "") {
-                    $parameter = 0;
+                    $parameter = null;
                 } elseif (strtolower($parameter) == "null") {
-                    $parameter = 0;
+                    $parameter = null;
                 }
 
-                $type  = $columns_data[$key];
+                $type = $columns_data[$key];
 
-                if($type == 'float' && !is_numeric($parameter)){
-                    return response()->json(['message' => 'Invalid data format for column '.$key], 500);
+                if ($type == 'float' && !is_numeric($parameter)) {
+                    return response()->json(['message' => 'Invalid data format for column ' . $key], 500);
                 }
 
                 if ($key == 'date') {
-
-                    if (date('Y-m-d', strtotime($parameter)) != $parameter) {
+                    if (date('d-m-Y', strtotime($parameter)) != $parameter) {
                         return response()->json(['message' => 'Invalid data format'], 500);
+                    }else{
+                        $parameter = date('Y-m-d',strtotime($parameter));
                     }
                 }
 
-                if ($key == 'time') {
-                    if (date('H:i:s', strtotime($parameter)) != $parameter) {
+                if ($key == 'time' && $parameter != "") {
+                    if (date('H:i', strtotime($parameter)) != $parameter) {
+
+                        $parameter .= ":00";
                         return response()->json(['message' => 'Invalid time format'], 500);
                     }
                 }
@@ -177,7 +193,7 @@ SET id = NULL;
     function delete_rows(Request $request)
     {
         $deletion_row_ids = $request->get('ids');
-        $result = DB::table('data')->whereIn('id',$deletion_row_ids)->delete();
+        $result = DB::table('data')->whereIn('id', $deletion_row_ids)->delete();
         if ($result) {
             return response()->json(['message' => 'Successfully deleted rows']);
         } else {
@@ -230,7 +246,6 @@ SET id = NULL;
                 'total_goals_over_2-5' => $this->parse_params($row[38] ?? NULL),
                 'total_goals_over_3-5' => $this->parse_params($row[39] ?? NULL)
             ];
-
         }
     }
 

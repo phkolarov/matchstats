@@ -2,13 +2,26 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/app/Http/Controllers/DatatableController.php" />
+    <bookmark url="file://$PROJECT_DIR$/public/js/column_settings.js" line="45" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bcbe3d20-6e9f-43b3-a784-8b5e61bf5521" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/css/datatable-dt.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/seguisb.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DatatableController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DatatableController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SystemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SystemController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/asd.php" beforeDir="false" afterPath="$PROJECT_DIR$/asd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/common.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/column_settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/column_settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/match_stats_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/match_stats_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/matchstats_page_files/matchstats_common_data_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/matchstats_page_files/matchstats_common_data_page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/matchstats.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/matchstats.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,31 +32,48 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/matchstats.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="102" selection-start-line="49" selection-start-column="102" selection-end-line="49" selection-end-column="102" />
+            <state relative-caret-position="221">
+              <caret line="13" column="103" selection-start-line="13" selection-start-column="103" selection-end-line="13" selection-end-column="103" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DatatableController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="33" column="37" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="37" />
               <folding>
-                <element signature="e#2491#2509#0#HTML" expanded="true" />
-                <element signature="e#5776#5795#0#HTML" expanded="true" />
-                <element signature="e#7057#7076#0#HTML" expanded="true" />
-                <element signature="e#2463#2482#0#HTML" expanded="true" />
-                <element signature="e#2935#2954#0#HTML" expanded="true" />
-                <element signature="e#11249#11268#0#HTML" expanded="true" />
-                <element signature="e#11709#11728#0#HTML" expanded="true" />
+                <element signature="e#42#70#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SystemController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+            <state relative-caret-position="2040">
+              <caret line="122" column="46" selection-start-line="122" selection-start-column="46" selection-end-line="122" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -51,13 +81,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/matchstats_page_files/matchstats_common_data_page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="533" column="61" selection-start-line="533" selection-start-column="61" selection-end-line="533" selection-end-column="61" />
+            <state relative-caret-position="618">
+              <caret line="811" selection-start-line="811" selection-end-line="811" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#td#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/matchstats.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="901">
+              <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -65,8 +102,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="28" column="36" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="36" />
+            <state relative-caret-position="5780">
+              <caret line="340" column="92" selection-start-line="340" selection-start-column="92" selection-end-line="340" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/match_stats_app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -74,73 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/column_settings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
-              <caret line="124" column="10" lean-forward="true" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="10" />
-              <folding>
-                <element signature="e#3518#3542#0" />
-                <element signature="e#3787#3811#0" />
-                <element signature="e#4055#4079#0" />
-                <element signature="e#4450#4475#0" />
-                <element signature="e#4682#4706#0" />
-                <element signature="e#4910#4923#0" />
-                <element signature="e#5125#5149#0" />
-                <element signature="e#5371#5413#0" />
-                <element signature="e#5616#5640#0" />
-                <element signature="e#5854#5881#0" />
-                <element signature="e#6089#6126#0" />
-                <element signature="e#6320#6344#0" />
-                <element signature="e#6553#6577#0" />
-                <element signature="e#6703#6727#0" />
-                <element signature="e#6859#6883#0" />
-                <element signature="e#7024#7048#0" />
-                <element signature="e#7153#7179#0" />
-                <element signature="e#7266#7290#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/asd.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.mix.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/all.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15765">
-              <caret line="3664" column="25" selection-start-line="3664" selection-start-column="25" selection-end-line="3664" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/popper.js/dist/popper-utils.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-16646">
-              <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+            <state relative-caret-position="187">
+              <caret line="11" column="97" selection-start-line="11" selection-start-column="97" selection-end-line="11" selection-end-column="97" />
             </state>
           </provider>
         </entry>
@@ -151,49 +141,63 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>neu</find>
-      <find>POST</find>
-      <find>on('click'</find>
-      <find>selected</find>
-      <find>&quot;[a-z_]+&quot;</find>
-      <find>.val(</find>
-      <find>selecte</find>
-      <find>complerte</find>
-      <find>toLo</find>
-      <find>columns()</find>
-      <find>change</find>
-      <find>table</find>
-      <find>datatable</find>
-      <find>datatab</find>
-      <find>c</find>
-      <find>factory(jQuery,window,document);}})(function($,window,document,undefined){&quot;use strict&quot;;/**</find>
-      <find>console.lo</find>
-      <find>home_team_</find>
-      <find>filters</find>
-      <find>o</find>
-      <find>filter_obtainers_btn</find>
-      <find>obtainer_</find>
-      <find>до</find>
-      <find>n</find>
-      <find>skip_filter</find>
-      <find>filters_column</find>
-      <find>clearFilters</find>
-      <find>datetimepicker</find>
-      <find>obtainer</find>
-      <find>cleaf</find>
+      <find>.sorting_1,.sorting_2,.sorting_3{</find>
+      <find>dashbo</find>
+      <find>86</find>
+      <find>0 2px</find>
+      <find>.dataTables_wrapper</find>
+      <find>dataTables_info</find>
+      <find>tfoot</find>
+      <find>request</find>
+      <find>cell</find>
+      <find>cell29</find>
+      <find>thead</find>
+      <find>datatable =</find>
+      <find>&lt;input</find>
+      <find>.sorting</find>
+      <find>red'</find>
+      <find>colorize</find>
+      <find>_f</find>
+      <find>column_type=&quot;id&quot;</find>
+      <find>blue</find>
+      <find>type=&quot;search&quot;</find>
+      <find>search</find>
+      <find>cell1</find>
+      <find>data_filter</find>
+      <find>cell36</find>
+      <find>#data thead tr:nth-child(3) &gt; [column_type=&quot;away_team_draw_no_bet&quot;]</find>
+      <find>border</find>
+      <find>tfoot:b</find>
+      <find>1px solid black</find>
+      <find>filter</find>
+      <find>home_team-to</find>
     </findStrings>
     <replaceStrings>
       <replace>35px</replace>
       <replace>id=</replace>
       <replace>obtainer_btn</replace>
       <replace>CTRY</replace>
-      <replace>info</replace>
+      <replace>'background-color':</replace>
       <replace>to</replace>
+      <replace>data.full_time_result_t</replace>
+      <replace>info</replace>
+      <replace>width: &quot;22&quot;</replace>
+      <replace>width: &quot;86&quot;</replace>
+      <replace>placeholder_ex</replace>
+      <replace>31</replace>
+      <replace>F</replace>
+      <replace>btn-xxs</replace>
+      <replace>nth-child(3)</replace>
+      <replace>.</replace>
+      <replace>'</replace>
+      <replace>33</replace>
+      <replace>column_type_f</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -203,25 +207,28 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/public/js/data_service.js" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/SystemController.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/public/css/common.css" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/DatatableController.php" />
         <option value="$PROJECT_DIR$/public/js/matchstats_page_files/column_settings.js" />
-        <option value="$PROJECT_DIR$/public/js/match_stats_app.js" />
         <option value="$PROJECT_DIR$/public/js/popper.in.js" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/bootstrap.js" />
-        <option value="$PROJECT_DIR$/webpack.mix.js" />
         <option value="$PROJECT_DIR$/asd.php" />
+        <option value="$PROJECT_DIR$/public/js/match_stats_app.js" />
+        <option value="$PROJECT_DIR$/public/css/datatable-dt.css" />
+        <option value="$PROJECT_DIR$/webpack.mix.js" />
+        <option value="$PROJECT_DIR$/public/css/all.css" />
+        <option value="$PROJECT_DIR$/config/database.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/public/js/column_settings.js" />
+        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/DatatableController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SystemController.php" />
         <option value="$PROJECT_DIR$/resources/views/matchstats.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/common.css" />
         <option value="$PROJECT_DIR$/public/js/matchstats_page_files/matchstats_common_data_page.js" />
       </list>
     </option>
@@ -386,12 +393,6 @@
               <item name="matchstats" type="b2602c69:ProjectViewProjectNode" />
               <item name="matchstats" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="matchstats" type="b2602c69:ProjectViewProjectNode" />
-              <item name="matchstats" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -410,13 +411,14 @@
               <item name="matchstats" type="b2602c69:ProjectViewProjectNode" />
               <item name="matchstats" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="matchstats" type="b2602c69:ProjectViewProjectNode" />
               <item name="matchstats" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="matchstats" type="b2602c69:ProjectViewProjectNode" />
@@ -440,13 +442,15 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHubDesktop/GitHubDesktop.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bspb-life/back" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -456,11 +460,12 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\xampp7.1\htdocs\matchstats\public\css" />
+      <recent name="E:\xampp7.1\htdocs\matchstats\resources\views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\xampp7.1\htdocs\matchstats\public\js" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\xampp7.1\htdocs\matchstats\resources\views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -494,18 +499,24 @@
       <workItem from="1548325945376" duration="6674000" />
       <workItem from="1548400933915" duration="24637000" />
       <workItem from="1549740981684" duration="24232000" />
-      <workItem from="1550128814525" duration="84183000" />
+      <workItem from="1550128814525" duration="104650000" />
+      <workItem from="1551189638707" duration="736000" />
+      <workItem from="1551253013726" duration="16108000" />
+      <workItem from="1551871684479" duration="101268000" />
+      <workItem from="1553076853164" duration="2045000" />
+      <workItem from="1553602033882" duration="33334000" />
+      <workItem from="1554714000856" duration="550000" />
+      <workItem from="1555319173636" duration="531000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139726000" />
+    <option name="totallyTimeSpent" value="314765000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="7" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10529217" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11411246" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -518,59 +529,25 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.29075804" />
+      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.08722741" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="RNConsole" order="11" weight="0.32917964" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.056074765" />
-      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49944875" weight="0.18172377" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5005513" side_tool="true" weight="0.40186915" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="14" weight="0.32917964" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="RN Interactive" order="3" />
-      <window_info anchor="right" id="Remote Host" order="4" weight="0.22657111" />
-      <window_info anchor="right" id="Mongo Explorer" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Mongo Explorer" order="4" sideWeight="0.49829352" weight="0.3296582" />
+      <window_info anchor="right" id="Database" order="5" sideWeight="0.49829352" weight="0.3296582" />
+      <window_info anchor="right" id="Remote Host" order="6" sideWeight="0.5017065" side_tool="true" weight="0.3296582" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="5047" column="4" selection-start-line="5047" selection-start-column="4" selection-end-line="5047" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Concerns/InteractsWithInput.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="261" column="20" selection-start-line="261" selection-start-column="20" selection-end-line="261" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -609,16 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="71" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -633,32 +600,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SystemController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1912">
-          <caret line="166" column="49" selection-start-line="166" selection-start-column="49" selection-end-line="166" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/data_service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/tippy.js/esm/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/tippy.js/umd/index.all.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/popper.js/dist/popper.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -683,23 +629,6 @@
         <state relative-caret-position="-3519" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DatatableController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#42#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/match_stats_app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/datatables.net/js/jquery.dataTables.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -714,13 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/all.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15765">
@@ -728,19 +650,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/popper.in.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/popper.in.js" />
     <entry file="file://$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/js/popper.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/jquery/dist/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -756,77 +667,180 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
+    <entry file="file://$PROJECT_DIR$/public/js/data_service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        <state relative-caret-position="408">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/asd.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="578">
+          <caret line="34" column="58" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/column_settings.js">
+    <entry file="file://$PROJECT_DIR$/testt.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="124" column="10" lean-forward="true" selection-start-line="124" selection-start-column="10" selection-end-line="124" selection-end-column="10" />
+        <state relative-caret-position="102">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="9" column="71" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/datatables.net-dt/css/jquery.dataTables.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/datatable-dt.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="54" lean-forward="true" selection-start-column="54" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/app.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/datatables.net-dt/css/jquery.dataTables.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="707" column="20" lean-forward="true" selection-start-line="707" selection-start-column="20" selection-end-line="707" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="56" column="108" selection-start-line="56" selection-start-column="108" selection-end-line="56" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/jquery/dist/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="187" column="4" selection-start-line="187" selection-start-column="4" selection-end-line="187" selection-end-column="4" />
           <folding>
-            <element signature="e#3518#3542#0" />
-            <element signature="e#3787#3811#0" />
-            <element signature="e#4055#4079#0" />
-            <element signature="e#4450#4475#0" />
-            <element signature="e#4682#4706#0" />
-            <element signature="e#4910#4923#0" />
-            <element signature="e#5125#5149#0" />
-            <element signature="e#5371#5413#0" />
-            <element signature="e#5616#5640#0" />
-            <element signature="e#5854#5881#0" />
-            <element signature="e#6089#6126#0" />
-            <element signature="e#6320#6344#0" />
-            <element signature="e#6553#6577#0" />
-            <element signature="e#6703#6727#0" />
-            <element signature="e#6859#6883#0" />
-            <element signature="e#7024#7048#0" />
-            <element signature="e#7153#7179#0" />
-            <element signature="e#7266#7290#0" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/common.css">
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="36" />
+        <state relative-caret-position="276">
+          <caret line="505" selection-start-line="505" selection-end-line="505" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="103" selection-start-line="13" selection-start-column="103" selection-end-line="13" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DatatableController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="37" />
+          <folding>
+            <element signature="e#42#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SystemController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="122" column="46" selection-start-line="122" selection-start-column="46" selection-end-line="122" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/matchstats.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="102" selection-start-line="49" selection-start-column="102" selection-end-line="49" selection-end-column="102" />
-          <folding>
-            <element signature="e#2491#2509#0#HTML" expanded="true" />
-            <element signature="e#5776#5795#0#HTML" expanded="true" />
-            <element signature="e#7057#7076#0#HTML" expanded="true" />
-            <element signature="e#2463#2482#0#HTML" expanded="true" />
-            <element signature="e#2935#2954#0#HTML" expanded="true" />
-            <element signature="e#11249#11268#0#HTML" expanded="true" />
-            <element signature="e#11709#11728#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="901">
+          <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5780">
+          <caret line="340" column="92" selection-start-line="340" selection-start-column="92" selection-end-line="340" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/match_stats_app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/column_settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="97" selection-start-line="11" selection-start-column="97" selection-end-line="11" selection-end-column="97" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/matchstats_page_files/matchstats_common_data_page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="533" column="61" selection-start-line="533" selection-start-column="61" selection-end-line="533" selection-end-column="61" />
+        <state relative-caret-position="618">
+          <caret line="811" selection-start-line="811" selection-end-line="811" />
           <folding>
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
           </folding>
         </state>

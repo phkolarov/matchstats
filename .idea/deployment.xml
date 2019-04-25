@@ -2,6 +2,13 @@
 <project version="4">
   <component name="PublishConfigData" serverName="akatsky_admin@akatsky.com">
     <serverData>
+      <paths name="Babina">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="akatsky_admin@akatsky.com">
         <serverdata>
           <mappings>
@@ -10,6 +17,13 @@
         </serverdata>
       </paths>
       <paths name="bspb remote">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="euroins_ftp">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
